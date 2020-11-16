@@ -19,7 +19,7 @@ namespace Conductus.Widget.API
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<StartupSQLServerDB>();
                 });
     }
 }
