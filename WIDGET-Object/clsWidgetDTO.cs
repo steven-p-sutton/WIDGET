@@ -47,8 +47,8 @@ namespace Conductus.Widget.Object
         {
             Id = widget.Id;
             Date = widget.Date;
-            Name = string.Empty;
-            Count = 0;
+            Name = widget.Name;
+            Count = widget.Count;
             //TemperatureC = widget.TemperatureC;
             //Summaryx = widget.Summaryx;
             // Secret NOT present in DTO

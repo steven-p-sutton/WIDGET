@@ -22,3 +22,71 @@
 2020-11-16T17:50:47.6620501+00:00  [INF] Hosting environment: "Development" (c3307c92)
 2020-11-16T17:50:47.6680978+00:00  [INF] Content root path: "C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-API" (b5d60022)
 2020-11-16T17:50:48.9433397+00:00 80000005-0001-fe00-b63f-84710c7967bb [INF] GET: widget (1b26113d)
+2020-11-16T18:00:13.3724689+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-16T18:00:13.4204232+00:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-16T18:00:13.5037660+00:00  [INF] Content root path: "C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-API" (b5d60022)
+2020-11-16T18:00:13.9459297+00:00 8000000d-0001-ff00-b63f-84710c7967bb [INF] GET: widget (1b26113d)
+2020-11-16T18:04:58.4186555+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-16T18:04:58.5084716+00:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-16T18:04:58.5161999+00:00  [INF] Content root path: "C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-API" (b5d60022)
+2020-11-16T18:04:59.4605022+00:00 80000007-0001-fe00-b63f-84710c7967bb [INF] GET: widget (1b26113d)
+2020-11-16T18:07:26.6029945+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-16T18:07:26.6302078+00:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-16T18:07:26.6398722+00:00  [INF] Content root path: "C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-API" (b5d60022)
+2020-11-16T18:07:27.7247947+00:00 80000002-0002-fd00-b63f-84710c7967bb [INF] GET: widget (1b26113d)
+2020-11-16T18:11:14.7921913+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-16T18:11:14.8669642+00:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-16T18:11:14.8805854+00:00  [INF] Content root path: "C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-API" (b5d60022)
+2020-11-16T18:11:15.7962261+00:00 80000009-0001-fe00-b63f-84710c7967bb [INF] GET: widget (1b26113d)
+2020-11-16T18:15:25.0721402+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-16T18:15:25.1206527+00:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-16T18:15:25.1253603+00:00  [INF] Content root path: "C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-API" (b5d60022)
+2020-11-16T18:15:26.1699621+00:00 8000000c-0003-ff00-b63f-84710c7967bb [INF] GET: widget (1b26113d)
+2020-11-16T18:16:11.4097703+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-16T18:16:11.4684288+00:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-16T18:16:11.5028029+00:00  [INF] Content root path: "C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-API" (b5d60022)
+2020-11-16T18:16:12.0647026+00:00 80000013-0000-fd00-b63f-84710c7967bb [INF] GET: widget (1b26113d)
+2020-11-16T18:16:13.6634271+00:00 80000013-0000-fd00-b63f-84710c7967bb [ERR] NoContent (f3c8181d)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Conductus.Widget.Context.WidgetContext.SetupData() in C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-Context\clsWidgetContext.cs:line 47
+   at Conductus.Widget.Controller.WidgetController.GetWidgets() in C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-Controller\clsWidgetController..cs:line 44
+2020-11-16T18:19:20.8595525+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-16T18:19:20.8930356+00:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-16T18:19:20.8966175+00:00  [INF] Content root path: "C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-API" (b5d60022)
+2020-11-16T18:19:21.9327848+00:00 80000006-0000-fe00-b63f-84710c7967bb [INF] GET: widget (1b26113d)
+2020-11-16T18:19:23.7392278+00:00 80000006-0000-fe00-b63f-84710c7967bb [ERR] NoContent (f3c8181d)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Conductus.Widget.Context.WidgetContext.SetupData() in C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-Context\clsWidgetContext.cs:line 47
+   at Conductus.Widget.Controller.WidgetController.GetWidgets() in C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-Controller\clsWidgetController..cs:line 44
+2020-11-16T18:20:00.2297541+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-16T18:20:00.2485413+00:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-16T18:20:00.2490115+00:00  [INF] Content root path: "C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-API" (b5d60022)
+2020-11-16T18:20:00.4905671+00:00 8000000f-0003-ff00-b63f-84710c7967bb [INF] GET: widget (1b26113d)
+2020-11-16T18:20:01.1952017+00:00 8000000f-0003-ff00-b63f-84710c7967bb [ERR] NoContent (f3c8181d)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Conductus.Widget.Context.WidgetContext.SetupData() in C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-Context\clsWidgetContext.cs:line 47
+   at Conductus.Widget.Controller.WidgetController.GetWidgets() in C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-Controller\clsWidgetController..cs:line 44
+2020-11-16T18:20:55.0181995+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-16T18:20:55.0368902+00:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-16T18:20:55.0404673+00:00  [INF] Content root path: "C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-API" (b5d60022)
+2020-11-16T18:20:55.6193047+00:00 80000017-0000-fd00-b63f-84710c7967bb [INF] GET: widget (1b26113d)
+2020-11-16T18:21:45.3139199+00:00 80000017-0000-fd00-b63f-84710c7967bb [ERR] NoContent (f3c8181d)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Conductus.Widget.Context.WidgetContext.SetupData() in C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-Context\clsWidgetContext.cs:line 47
+   at Conductus.Widget.Controller.WidgetController.GetWidgets() in C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-Controller\clsWidgetController..cs:line 44
+2020-11-16T18:22:33.8262583+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-16T18:22:33.8492015+00:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-16T18:22:33.8521760+00:00  [INF] Content root path: "C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-API" (b5d60022)
+2020-11-16T18:22:34.5223593+00:00 8000000c-0002-fe00-b63f-84710c7967bb [INF] GET: widget (1b26113d)
+2020-11-16T18:24:49.5357501+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-16T18:24:49.5532814+00:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-16T18:24:49.5562725+00:00  [INF] Content root path: "C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-API" (b5d60022)
+2020-11-16T18:24:50.1771882+00:00 8000000b-0001-fe00-b63f-84710c7967bb [INF] GET: widget (1b26113d)
+2020-11-16T18:24:51.2008485+00:00 8000000b-0001-fe00-b63f-84710c7967bb [ERR] NoContent (f3c8181d)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Conductus.Widget.Context.WidgetContext.SetupData() in C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-Context\clsWidgetContext.cs:line 47
+   at Conductus.Widget.Controller.WidgetController.GetWidgets() in C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-Controller\clsWidgetController..cs:line 44
+2020-11-16T18:26:03.9116564+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-11-16T18:26:03.9332797+00:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-11-16T18:26:03.9363413+00:00  [INF] Content root path: "C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-API" (b5d60022)
+2020-11-16T18:26:04.5167675+00:00 8000001a-0000-fd00-b63f-84710c7967bb [INF] GET: widget (1b26113d)

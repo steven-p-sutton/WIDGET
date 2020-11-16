@@ -28,9 +28,9 @@ namespace Conductus.Widget.Context
         public DbSet<WidgetObject> Widgets { get; set; }
 
         // Dummy data setup so that InMemory database has 4 initial records in it
-        private static readonly string[] Summaries = new[]
+        private static readonly string[] Names = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Widget01", "Widget02", "Widget03", "Widget04", "Widget05", "Widget06", "Widget07", "Widget08", "Widget09", "Widget10"
         };
 
         private static Boolean bDataLoaded = false; // enure only loaded on first GET
@@ -40,15 +40,16 @@ namespace Conductus.Widget.Context
             {
                 return;
             }
-            var rng = new Random();
+            //var rng = new Random();
 
-            for (int i = 1; i < 5; i++)
+            for (int i = 1; i < 10; i++)
             {
                 var widget = new WidgetObject
                 {
                     Date = DateTime.Now.AddDays(i),
                     //TemperatureC = rng.Next(-20, 55),
-                    //Summaryx = Summaries[rng.Next(Summaries.Length)],
+                    Name = Names[i],
+                    Count = i,
                     Secret = "Secret " + i.ToString()
                 };
 
