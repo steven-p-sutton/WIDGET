@@ -37,11 +37,11 @@ namespace Conductus.Widget.Object
         {
         }
         // Create a class constructor with multiple parameters
-        public WidgetDTO(DateTimeOffset date, int temperatureC, string summary)
+        public WidgetDTO(DateTimeOffset date /*, int temperatureC, string summary*/)
         {
             Date = date;
-            TemperatureC = temperatureC;
-            Summaryx = summary;
+            //TemperatureC = temperatureC;
+            //Summaryx = summary;
         }
         public WidgetDTO(WidgetObject widget)
         {
@@ -49,8 +49,8 @@ namespace Conductus.Widget.Object
             Date = widget.Date;
             Name = string.Empty;
             Count = 0;
-            TemperatureC = widget.TemperatureC;
-            Summaryx = widget.Summaryx;
+            //TemperatureC = widget.TemperatureC;
+            //Summaryx = widget.Summaryx;
             // Secret NOT present in DTO
         }
         public WidgetDTO WidgetToDTO(WidgetObject widget) => new WidgetDTO (widget);
@@ -58,8 +58,8 @@ namespace Conductus.Widget.Object
         public DateTimeOffset Date { get; set; }
         public string Name { get; set; }
         public int Count { get; set; }
-        public int TemperatureC { get; set; }
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556); // calculated
-        public string Summaryx { get; set; }
+        //public int TemperatureC { get; set; }
+        //public int TemperatureF => 32 + (int)(TemperatureC / 0.5556); // calculated
+        //public string Summaryx { get; set; }
     }
 }
