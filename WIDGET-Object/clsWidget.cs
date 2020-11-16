@@ -37,7 +37,7 @@ namespace Conductus.Widget.Object
         {
             Date = DateTimeOffset.MinValue;
             TemperatureC = int.MinValue;
-            Summary = string.Empty;
+            Summaryx = string.Empty;
             Secret = string.Empty;
         }
         // Create a class constructor with multiple parameters
@@ -45,20 +45,20 @@ namespace Conductus.Widget.Object
         {
             Date = date;
             TemperatureC = temperatureC;
-            Summary = summary;
+            Summaryx = summary;
         }
         public WidgetObject(DateTimeOffset date, int temperatureC, string summary, string secret)
         {
             Date = date;
             TemperatureC = temperatureC;
-            Summary = summary;
+            Summaryx = summary;
             Secret = secret;
         }
         public long Id { get; set; }
         public DateTimeOffset Date { get; set; }
         public int TemperatureC { get; set; }
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556); // calculated
-        public string Summary { get; set; }
+        public string Summaryx { get; set; }
         public string Secret { get; set; } // not included in DTO version of class.
     }
 }

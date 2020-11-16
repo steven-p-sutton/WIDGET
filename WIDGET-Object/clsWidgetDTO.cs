@@ -48,7 +48,7 @@ namespace Conductus.Widget.Object
             Id = widget.Id;
             Date = widget.Date;
             TemperatureC = widget.TemperatureC;
-            Summaryx = widget.Summary;
+            Summaryx = widget.Summaryx;
             // Secret NOT present in DTO
         }
         public WidgetDTO WidgetToDTO(WidgetObject widget) => new WidgetDTO (widget);

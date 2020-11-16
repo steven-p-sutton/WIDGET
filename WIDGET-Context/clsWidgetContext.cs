@@ -48,7 +48,7 @@ namespace Conductus.Widget.Context
                 {
                     Date = DateTime.Now.AddDays(i),
                     TemperatureC = rng.Next(-20, 55),
-                    Summary = Summaries[rng.Next(Summaries.Length)],
+                    Summaryx = Summaries[rng.Next(Summaries.Length)],
                     Secret = "Secret " + i.ToString()
                 };
 
@@ -92,7 +92,7 @@ namespace Conductus.Widget.Context
 
             widget.Date = widgetDTO.Date;
             widget.TemperatureC = widgetDTO.TemperatureC;
-            widget.Summary = widgetDTO.Summaryx;
+            widget.Summaryx = widgetDTO.Summaryx;
 
             await this.SaveChangesAsync();
 
@@ -115,7 +115,7 @@ namespace Conductus.Widget.Context
                 Id = widgetDTO.Id,
                 Date = widgetDTO.Date,
                 TemperatureC = widgetDTO.TemperatureC,
-                Summary = widgetDTO.Summaryx,
+                Summaryx = widgetDTO.Summaryx,
                 Secret = string.Empty
             };
 
