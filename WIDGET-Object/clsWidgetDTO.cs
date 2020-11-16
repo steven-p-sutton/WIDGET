@@ -41,14 +41,14 @@ namespace Conductus.Widget.Object
         {
             Date = date;
             TemperatureC = temperatureC;
-            Summary = summary;
+            Summaryx = summary;
         }
         public WidgetDTO(WidgetObject widget)
         {
             Id = widget.Id;
             Date = widget.Date;
             TemperatureC = widget.TemperatureC;
-            Summary = widget.Summary;
+            Summaryx = widget.Summary;
             // Secret NOT present in DTO
         }
         public WidgetDTO WidgetToDTO(WidgetObject widget) => new WidgetDTO (widget);
@@ -56,6 +56,6 @@ namespace Conductus.Widget.Object
         public DateTimeOffset Date { get; set; }
         public int TemperatureC { get; set; }
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556); // calculated
-        public string Summary { get; set; }
+        public string Summaryx { get; set; }
     }
 }
