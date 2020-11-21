@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIDGET", "WIDGET.csproj", "{3928DFF3-5723-44FD-946E-9E19746A69C4}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Object", "WIDGET-Object\WIDGET-Object.csproj", "{FB7F5BC3-36AF-45E5-A8F9-2EF42871387E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-API", "WIDGET-API\WIDGET-API.csproj", "{5787E8BA-3142-4981-8150-2C83FF11B6B7}"
@@ -15,16 +13,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Controller", "WIDGET
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Exception", "WIDGET-Exception\WIDGET-Exception.csproj", "{C7ED3332-C2AF-4155-84B2-BDB0698CEFE4}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET", "WIDGET\WIDGET.csproj", "{20CA7DF5-F09E-40F8-91EC-F1758DB52995}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3928DFF3-5723-44FD-946E-9E19746A69C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3928DFF3-5723-44FD-946E-9E19746A69C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3928DFF3-5723-44FD-946E-9E19746A69C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3928DFF3-5723-44FD-946E-9E19746A69C4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FB7F5BC3-36AF-45E5-A8F9-2EF42871387E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FB7F5BC3-36AF-45E5-A8F9-2EF42871387E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB7F5BC3-36AF-45E5-A8F9-2EF42871387E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{C7ED3332-C2AF-4155-84B2-BDB0698CEFE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7ED3332-C2AF-4155-84B2-BDB0698CEFE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7ED3332-C2AF-4155-84B2-BDB0698CEFE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20CA7DF5-F09E-40F8-91EC-F1758DB52995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20CA7DF5-F09E-40F8-91EC-F1758DB52995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20CA7DF5-F09E-40F8-91EC-F1758DB52995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20CA7DF5-F09E-40F8-91EC-F1758DB52995}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
