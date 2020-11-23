@@ -46,8 +46,8 @@ namespace Conductus.Widget.Context
             {
                 var widget = new WidgetObject
                 {
+                    Id = i,
                     Date = DateTime.Now.AddDays(i),
-                    //TemperatureC = rng.Next(-20, 55),
                     Name = Names[i],
                     Count = i,
                     Secret = "Secret " + i.ToString()

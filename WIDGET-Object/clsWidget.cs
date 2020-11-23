@@ -36,10 +36,11 @@ namespace Conductus.Widget.Object
         // Default (optional) initialise to known good values
         public WidgetObject()
         {
+            Id = 0;
             Date = DateTimeOffset.MinValue;
             Name = string.Empty;
             Count = 0;
-            Secret = string.Empty;
+            Secret = string.Empty; 
         }
         // Createclass constructors with multiple parameters
         public WidgetObject(DateTimeOffset date)
