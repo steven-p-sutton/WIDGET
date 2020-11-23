@@ -6,7 +6,7 @@
 // Files for CSV, XML, JSON, TEXT, ... and memory DataTables, database tables, 
 // spreadsheets etc, Web pages, API, MVC, ADO etc 
 
-namespace Conductus.Widget.Object.NET
+namespace Conductus.Widget.Object.Net
 {
     // Instance Examples (psate into your code)
 
