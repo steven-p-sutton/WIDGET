@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WIDGET-Exception\WIDGET-Exception.csproj" />
-    <ProjectReference Include="..\WIDGET-Object\WIDGET-Object.csproj" />
+    <ProjectReference Include="..\WIDGET-Object-Net\WIDGET-Object-Net.csproj" />
   </ItemGroup>
 
   <ItemGroup>
