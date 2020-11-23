@@ -1,13 +1,13 @@
-﻿using System;
-using Conductus.UTILITY.Net.Heading;
-
-// A general class that is used to hold data and strctures for examples.
+﻿// A general class that is used to hold data and strctures for examples.
 // Defines so that examples can interchange data & ideas
 // 
 // Files for CSV, XML, JSON, TEXT, ... and memory DataTables, database tables, 
 // spreadsheets etc, Web pages, API, MVC, ADO etc 
 
-namespace Conductus.Widget.Object.Net
+using System;
+using Conductus.UTILITY.Heading;
+
+namespace Conductus.Widget.Object
 {
     // Instance Examples (psate into your code)
 
@@ -31,7 +31,7 @@ namespace Conductus.Widget.Object.Net
 
     // https://www.w3schools.com/cs/cs_constructors.asp
 
-    public class WidgetDTO
+        public class WidgetDTO
     {
         // Default (optional) do nothing
         public WidgetDTO()
@@ -49,7 +49,7 @@ namespace Conductus.Widget.Object.Net
             Name = widget.Name;
             Count = widget.Count;
         }
-        public WidgetDTO WidgetToDTO(WidgetObject widget) => new WidgetDTO (widget);
+        public WidgetDTO WidgetToDTO(WidgetObject widget) => new WidgetDTO(widget);
         public long Id { get; set; }
         public DateTimeOffset Date { get; set; }
         public string Name { get; set; }

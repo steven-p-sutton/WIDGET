@@ -1,4 +1,5 @@
 ﻿using System;
+using Conductus.UTILITY.Net.Heading;
 
 // A general class that is used to hold data and strctures for examples.
 // Defines so that examples can interchange data & ideas
@@ -55,5 +56,18 @@ namespace Conductus.Widget.Object.Net
         public string Name { get; set; }
         public int Count { get; set; }
         public string Secret { get; set; } // not included in DTO version of class.
+
+        public string Display(string title)
+        {
+            string s = Environment.NewLine;
+            s = s + Heading.H4 + " " + title + " " + Heading.H4 + Environment.NewLine;
+            s = s + "    Id: " + this.Id.ToString() + Environment.NewLine;
+            s = s + "  Date: " + this.Date.ToString() + Environment.NewLine;
+            s = s + "  Name: " + this.Name + Environment.NewLine;
+            s = s + " Count: " + this.Count.ToString() + Environment.NewLine;
+            s = s + "Secret: " + this.Secret.ToString() + Environment.NewLine;
+            s = s + Environment.NewLine;
+            return s;
+        }
     }
 }
