@@ -6,7 +6,7 @@
 // Files for CSV, XML, JSON, TEXT, ... and memory DataTables, database tables, 
 // spreadsheets etc, Web pages, API, MVC, ADO etc 
 
-namespace Conductus.Widget.Object
+namespace Conductus.Widget.Object.NET
 {
     // Instance Examples (psate into your code)
 
@@ -38,31 +38,22 @@ namespace Conductus.Widget.Object
             Date = DateTimeOffset.MinValue;
             Name = string.Empty;
             Count = 0;
-            //TemperatureC = int.MinValue;
-            //Summaryx = string.Empty;
             Secret = string.Empty;
         }
-        // Create a class constructor with multiple parameters
-        public WidgetObject(DateTimeOffset date /*, int temperatureC, string summary*/)
+        // Createclass constructors with multiple parameters
+        public WidgetObject(DateTimeOffset date)
         {
             Date = date;
-            //TemperatureC = temperatureC;
-            //Summaryx = summary;
         }
-        public WidgetObject(DateTimeOffset date, /*int temperatureC, string summary,*/ string secret)
+        public WidgetObject(DateTimeOffset date, string secret)
         {
             Date = date;
-            //TemperatureC = temperatureC;
-            //Summaryx = summary;
             Secret = secret;
         }
         public long Id { get; set; }
         public DateTimeOffset Date { get; set; }
         public string Name { get; set; }
         public int Count { get; set; }
-        //public int TemperatureC { get; set; }
-        //public int TemperatureF => 32 + (int)(TemperatureC / 0.5556); // calculated
-        //public string Summaryx { get; set; }
         public string Secret { get; set; } // not included in DTO version of class.
     }
 }

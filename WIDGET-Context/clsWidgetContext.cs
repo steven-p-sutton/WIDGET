@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Conductus.Widget.Exceptions; // Custom exceptions
-using Conductus.Widget.Object;
+using Conductus.Widget.Object.NET;
 
 // https://exceptionnotfound.net/ef-core-inmemory-asp-net-core-store-database/
 // Install-Package Microsoft.EntityFrameworkCore.SqlServer
