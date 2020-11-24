@@ -11,5 +11,6 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)clsWidget.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)clsWidgetDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Heading.cs" />
   </ItemGroup>
 </Project>

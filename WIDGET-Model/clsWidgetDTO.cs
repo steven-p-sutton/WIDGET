@@ -1,5 +1,4 @@
-﻿using system;
-
+﻿using System;
 public class WidgetDTO
 {
     // Default (optional) do nothing
