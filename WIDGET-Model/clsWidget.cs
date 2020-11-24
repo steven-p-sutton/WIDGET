@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System; //Environment
+// Heading class reference from UTILITY-Model project
 
 public class WidgetObject
 {

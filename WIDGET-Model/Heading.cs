@@ -1,5 +1,4 @@
 ﻿using System;
-
 static public class Heading
 {
     static public string H1
@@ -31,4 +30,3 @@ static public class Heading
         get { return new String('-', 80); }
     }
 }
-
