@@ -13,18 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET", "WIDGET\WIDGET.csp
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "WIDGET-Database", "WIDGET-Database\WIDGET-Database.sqlproj", "{DD22930A-61D5-444D-BA85-DE0B32032937}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Object-Net", "WIDGET-Object-Net\WIDGET-Object-Net.csproj", "{E0B41197-EDFB-4BA1-9543-AE9E878460E2}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Object", "WIDGET-Object\WIDGET-Object.csproj", "{E66BF40B-608A-4AF0-85F8-2A1F65D9857C}"
-EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WIDGET-Model", "WIDGET-Model\WIDGET-Model.shproj", "{3F5EC271-1EA2-4C8C-903C-FC99AA185F72}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UTILITY", "UTILITY\UTILITY.shproj", "{4B7EABF6-E8C3-4761-8858-D1ECD389D69A}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		UTILITY\UTILITY.projitems*{3f5ec271-1ea2-4c8c-903c-fc99aa185f72}*SharedItemsImports = 13
 		WIDGET-Model\WIDGET-Model.projitems*{3f5ec271-1ea2-4c8c-903c-fc99aa185f72}*SharedItemsImports = 13
-		UTILITY\UTILITY.projitems*{4b7eabf6-e8c3-4761-8858-d1ecd389d69a}*SharedItemsImports = 13
 		WIDGET-Model\WIDGET-Model.projitems*{6636890e-83b5-4da3-8915-c6d67164d83a}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,14 +48,6 @@ Global
 		{DD22930A-61D5-444D-BA85-DE0B32032937}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD22930A-61D5-444D-BA85-DE0B32032937}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DD22930A-61D5-444D-BA85-DE0B32032937}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{E0B41197-EDFB-4BA1-9543-AE9E878460E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0B41197-EDFB-4BA1-9543-AE9E878460E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0B41197-EDFB-4BA1-9543-AE9E878460E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0B41197-EDFB-4BA1-9543-AE9E878460E2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E66BF40B-608A-4AF0-85F8-2A1F65D9857C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E66BF40B-608A-4AF0-85F8-2A1F65D9857C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E66BF40B-608A-4AF0-85F8-2A1F65D9857C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E66BF40B-608A-4AF0-85F8-2A1F65D9857C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
