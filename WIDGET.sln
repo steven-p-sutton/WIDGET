@@ -17,7 +17,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Object-Net", "WIDGET
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Object", "WIDGET-Object\WIDGET-Object.csproj", "{E66BF40B-608A-4AF0-85F8-2A1F65D9857C}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WIDGET-Model", "WIDGET-Model\WIDGET-Model.shproj", "{3F5EC271-1EA2-4C8C-903C-FC99AA185F72}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		WIDGET-Model\WIDGET-Model.projitems*{3f5ec271-1ea2-4c8c-903c-fc99aa185f72}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
