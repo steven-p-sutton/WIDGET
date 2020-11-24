@@ -46,7 +46,8 @@ namespace Conductus.Widget.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<WidgetContext>(options =>
-                // InMemory Databaase
+
+                // SQL Server HERE ------>
                 options.UseInMemoryDatabase(databaseName: "WidgetsDB"));
 
             services.AddControllers();
