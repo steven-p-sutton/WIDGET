@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Widget-Context\Widget-Context.csproj" />
-    <ProjectReference Include="..\WIDGET-Object-Net\WIDGET-Object-Net.csproj" />
   </ItemGroup>
 
 </Project>
