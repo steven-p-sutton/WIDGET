@@ -22,6 +22,7 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		WIDGET-Model\WIDGET-Model.projitems*{3f5ec271-1ea2-4c8c-903c-fc99aa185f72}*SharedItemsImports = 13
+		WIDGET-Model\WIDGET-Model.projitems*{6636890e-83b5-4da3-8915-c6d67164d83a}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
