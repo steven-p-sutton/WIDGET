@@ -11,7 +11,6 @@ namespace Conductus.Widget.Try
             Console.WriteLine("Hello WIDGET-Try World!");
 
             WidgetObject w = new WidgetObject();
-
             WidgetDTO wd = new WidgetDTO();
         }
     }

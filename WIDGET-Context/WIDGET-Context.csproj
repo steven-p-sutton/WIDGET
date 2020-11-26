@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WIDGET-Exception\WIDGET-Exception.csproj" />
+    <ProjectReference Include="..\WIDGET-Model-Net\WIDGET-Model-Net.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,7 +18,5 @@
       <HintPath>..\..\..\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.7\analyzers\dotnet\cs\Microsoft.EntityFrameworkCore.Analyzers.dll</HintPath>
     </Reference>
   </ItemGroup>
-
-  <Import Project="..\WIDGET-Model\WIDGET-Model.projitems" Label="Shared" />
 
 </Project>
