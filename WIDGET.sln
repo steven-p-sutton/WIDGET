@@ -25,12 +25,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Object", "WIDGET-Obj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIDGET-Try", "WIDGET-Try\WIDGET-Try.csproj", "{B9C10296-C758-40C0-BE87-1382F4381C46}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UTILITY-Model", "UTILITY-Model\UTILITY-Model.shproj", "{FCA7B907-8F52-4A0D-8D51-3AD681A202E5}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		UTILITY-Model\UTILITY-Model.projitems*{1f45c977-9537-4f43-a777-1c610bb3bb9e}*SharedItemsImports = 5
 		WIDGET-Model\WIDGET-Model.projitems*{2ca43e1c-8b19-4c5e-afaf-8f1446a8e21e}*SharedItemsImports = 13
+		UTILITY-Model\UTILITY-Model.projitems*{5be0c7ff-7166-4eee-b081-daff1f92e69b}*SharedItemsImports = 5
 		WIDGET-Model\WIDGET-Model.projitems*{5be0c7ff-7166-4eee-b081-daff1f92e69b}*SharedItemsImports = 5
-		WIDGET-Model\WIDGET-Model.projitems*{6636890e-83b5-4da3-8915-c6d67164d83a}*SharedItemsImports = 5
+		UTILITY-Model\UTILITY-Model.projitems*{6fb16aee-4282-41f1-b84c-6516981943ec}*SharedItemsImports = 5
 		WIDGET-Model\WIDGET-Model.projitems*{6fb16aee-4282-41f1-b84c-6516981943ec}*SharedItemsImports = 5
+		UTILITY-Model\UTILITY-Model.projitems*{b9c10296-c758-40c0-be87-1382f4381c46}*SharedItemsImports = 4
+		WIDGET-Model\WIDGET-Model.projitems*{b9c10296-c758-40c0-be87-1382f4381c46}*SharedItemsImports = 4
+		UTILITY-Model\UTILITY-Model.projitems*{fca7b907-8f52-4a0d-8d51-3ad681a202e5}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
