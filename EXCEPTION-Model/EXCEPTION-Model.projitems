@@ -3,14 +3,13 @@
   <PropertyGroup>
     <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
-    <SharedGUID>3f5ec271-1ea2-4c8c-903c-fc99aa185f72</SharedGUID>
+    <SharedGUID>fee75b2d-2762-4a37-9858-3e0152a28392</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>WIDGET_Model</Import_RootNamespace>
+    <Import_RootNamespace>EXCEPTION_Model</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)clsWidget.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)clsWidgetDTO.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Heading.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BaseException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExceptionUtility.cs" />
   </ItemGroup>
 </Project>

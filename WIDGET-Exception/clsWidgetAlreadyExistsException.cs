@@ -1,8 +1,9 @@
 ﻿namespace Conductus.Widget.Exception
 {
-    public class WidgetAlreadyExistsException : System.Exception
+    public class WidgetAlreadyExistsException : BaseException
     {
         public WidgetAlreadyExistsException()
+             : base()
         {
         }
         public WidgetAlreadyExistsException(string message)

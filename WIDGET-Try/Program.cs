@@ -14,14 +14,17 @@ namespace Conductus.Widget.Try
             try
             {
                 WidgetObject w = new WidgetObject();
+                w.Id = 1;
                 w.Display("w");
+
                 WidgetDTO wd = new WidgetDTO();
+                wd.Id = 2;
                 wd.Display("wd");
 
-                throw new WidgetNotFoundException(
-                    String.Format("Widget {0} Not Found", wd.Id));
+                throw new WidgetNotImplentedException(
+                    String.Format("Error in Widget {0}", wd.Id));
             }
-            catch (WidgetNotFoundException e)
+            catch (WidgetNotImplentedException e)
             {
                 e.Display();
             }
