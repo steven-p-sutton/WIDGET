@@ -1,5 +1,5 @@
 ﻿using System;
-using Conductus.Widget.Object;
+using Conductus.Widget.Object; // .NET WIDGET-Object.dll
 
 namespace Conductus.Widget.Try
 {
@@ -8,7 +8,9 @@ namespace Conductus.Widget.Try
         static void Main(string[] args)
         {
             Console.WriteLine("Hello WIDGET-Try World!");
+
             WidgetObject w = new WidgetObject();
+
             WidgetDTO wd = new WidgetDTO();
         }
     }
