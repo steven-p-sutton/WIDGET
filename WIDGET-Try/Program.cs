@@ -18,7 +18,7 @@ namespace Conductus.Widget.Try
                 WidgetDTO wd = new WidgetDTO();
                 wd.Display("wd");
 
-                throw new WidgetNotFoundException(
+                throw new WidgetNotImplentedException(
                     String.Format("Widget {0} Not Found", wd.Id));
             }
             catch (WidgetNotFoundException e)
