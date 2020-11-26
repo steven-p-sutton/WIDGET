@@ -21,8 +21,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Exception", "WIDGET-
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WIDGET-Model", "WIDGET-Model\WIDGET-Model.shproj", "{2CA43E1C-8B19-4C5E-AFAF-8F1446A8E21E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Object", "WIDGET-Object\WIDGET-Object.csproj", "{36FA2154-9442-4779-9D01-EC60DDE83145}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIDGET-Try", "WIDGET-Try\WIDGET-Try.csproj", "{B9C10296-C758-40C0-BE87-1382F4381C46}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UTILITY-Model", "UTILITY-Model\UTILITY-Model.shproj", "{FCA7B907-8F52-4A0D-8D51-3AD681A202E5}"
@@ -33,7 +31,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTILITY-Model-Core", "UTILI
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		UTILITY-Model\UTILITY-Model.projitems*{1f45c977-9537-4f43-a777-1c610bb3bb9e}*SharedItemsImports = 5
 		WIDGET-Model\WIDGET-Model.projitems*{2ca43e1c-8b19-4c5e-afaf-8f1446a8e21e}*SharedItemsImports = 13
 		UTILITY-Model\UTILITY-Model.projitems*{548e1a46-f68d-4081-824f-ffa52920b4e4}*SharedItemsImports = 5
 		UTILITY-Model\UTILITY-Model.projitems*{5be0c7ff-7166-4eee-b081-daff1f92e69b}*SharedItemsImports = 5
@@ -82,10 +79,6 @@ Global
 		{1F45C977-9537-4F43-A777-1C610BB3BB9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F45C977-9537-4F43-A777-1C610BB3BB9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F45C977-9537-4F43-A777-1C610BB3BB9E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{36FA2154-9442-4779-9D01-EC60DDE83145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{36FA2154-9442-4779-9D01-EC60DDE83145}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{36FA2154-9442-4779-9D01-EC60DDE83145}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{36FA2154-9442-4779-9D01-EC60DDE83145}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B9C10296-C758-40C0-BE87-1382F4381C46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B9C10296-C758-40C0-BE87-1382F4381C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9C10296-C758-40C0-BE87-1382F4381C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
