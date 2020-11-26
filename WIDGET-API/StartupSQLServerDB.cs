@@ -34,9 +34,9 @@ namespace Conductus.Widget.API
     //2020-09-07T21:38:09.7802512+01:00 80000011-0001-fd00-b63f-84710c7967bb[INF] POST: widget/5 (69647a09)
     //2020-09-07T21:38:17.0738669+01:00 80000011-0001-fd00-b63f-84710c7967bb[ERR] Widget 5 Already exists(5c75da79)
 
-    public class Startup
+    public class StartupInMemoryDb
     {
-        public Startup(IConfiguration configuration)
+        public StartupInMemoryDb(IConfiguration configuration)
         {
             Configuration = configuration;
         }
@@ -46,7 +46,8 @@ namespace Conductus.Widget.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<WidgetContext>(options =>
-                // InMemory Databaase
+
+                // SQL Server HERE ------>
                 options.UseInMemoryDatabase(databaseName: "WidgetsDB"));
 
             services.AddControllers();

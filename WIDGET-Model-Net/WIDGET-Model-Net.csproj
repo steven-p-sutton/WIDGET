@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>WIDGET_Model_Net</RootNamespace>
   </PropertyGroup>
+
+  <Import Project="..\WIDGET-Model\WIDGET-Model.projitems" Label="Shared" />
 
 </Project>

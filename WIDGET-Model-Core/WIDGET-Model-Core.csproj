@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>WIDGET_Model_Core</RootNamespace>
+  </PropertyGroup>
+
+  <Import Project="..\WIDGET-Model\WIDGET-Model.projitems" Label="Shared" />
+
+</Project>

@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Widget]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Date] DATETIMEOFFSET NULL, 
+    [Name] NVARCHAR(50) NULL, 
+    [Count] INT NULL, 
+    [Secret] NVARCHAR(50) NULL
+)

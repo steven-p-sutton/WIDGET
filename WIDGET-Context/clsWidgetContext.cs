@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Conductus.Widget.Exceptions; // Custom exceptions
-using Conductus.Widget.Object;
+using Conductus.Widget.Exceptions.Net;  // Custom exceptions .NET in INFRASTRUCTURE solution
+//using Conductus.Widget.Object.Net;      // .NET version of Widget
+//using WIDGET.Model.Net;
 
 // https://exceptionnotfound.net/ef-core-inmemory-asp-net-core-store-database/
 // Install-Package Microsoft.EntityFrameworkCore.SqlServer
@@ -28,9 +29,9 @@ namespace Conductus.Widget.Context
         public DbSet<WidgetObject> Widgets { get; set; }
 
         // Dummy data setup so that InMemory database has 4 initial records in it
-        private static readonly string[] Summaries = new[]
+        private static readonly string[] Names = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Widget01", "Widget02", "Widget03", "Widget04", "Widget05", "Widget06", "Widget07", "Widget08", "Widget09", "Widget10"
         };
 
         private static Boolean bDataLoaded = false; // enure only loaded on first GET
@@ -40,15 +41,16 @@ namespace Conductus.Widget.Context
             {
                 return;
             }
-            var rng = new Random();
+            //var rng = new Random();
 
-            for (int i = 1; i < 5; i++)
+            for (int i = 1; i < 10; i++)
             {
                 var widget = new WidgetObject
                 {
+                    Id = i,
                     Date = DateTime.Now.AddDays(i),
-                    TemperatureC = rng.Next(-20, 55),
-                    Summary = Summaries[rng.Next(Summaries.Length)],
+                    Name = Names[i],
+                    Count = i,
                     Secret = "Secret " + i.ToString()
                 };
 
@@ -91,8 +93,8 @@ namespace Conductus.Widget.Context
             }
 
             widget.Date = widgetDTO.Date;
-            widget.TemperatureC = widgetDTO.TemperatureC;
-            widget.Summary = widgetDTO.Summary;
+            //widget.TemperatureC = widgetDTO.TemperatureC;
+            //widget.Summaryx = widgetDTO.Summaryx;
 
             await this.SaveChangesAsync();
 
@@ -114,8 +116,8 @@ namespace Conductus.Widget.Context
             {
                 Id = widgetDTO.Id,
                 Date = widgetDTO.Date,
-                TemperatureC = widgetDTO.TemperatureC,
-                Summary = widgetDTO.Summary,
+                //TemperatureC = widgetDTO.TemperatureC,
+                //Summaryx = widgetDTO.Summaryx,
                 Secret = string.Empty
             };
 
