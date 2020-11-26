@@ -1,15 +1,9 @@
 ﻿// Used to reference Exception generic exception class
-using System; 
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-//using Conductus.Widget.Object.Net;
 using Conductus.Widget.Context;
-// Add if Widget Custom Exceptions explicityly used rather than Syetem.Exception 
-// genertic exception class from wich the Widget custmom exceptions are derived from 
-using Conductus.Widget.Exception;
-//using Conductus.Widget.Object;
 
 namespace Conductus.Widget.Controller
 {

@@ -1,5 +1,4 @@
-﻿using System; // Environment
-// Heading class reference from UTILITY-Model project
+﻿using System;
 
 public class WidgetDTO
 {
