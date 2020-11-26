@@ -1,6 +1,6 @@
 ﻿namespace Conductus.Widget.Exception
 {
-    public class WidgetNotFoundException : System.Exception
+    public class WidgetNotFoundException : BaseException
     {
         public WidgetNotFoundException()
         {

@@ -1,6 +1,6 @@
 ﻿namespace Conductus.Widget.Exception
 {
-    public class WidgetNotImplentedException : System.Exception
+    public class WidgetNotImplentedException : BaseException
     {
         public WidgetNotImplentedException()
         {
