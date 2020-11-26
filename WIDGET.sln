@@ -11,24 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Controller", "WIDGET
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "WIDGET-Database", "WIDGET-Database\WIDGET-Database.sqlproj", "{DD22930A-61D5-444D-BA85-DE0B32032937}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Model-Net", "WIDGET-Model-Net\WIDGET-Model-Net.csproj", "{6FB16AEE-4282-41F1-B84C-6516981943EC}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Model-Core", "WIDGET-Model-Core\WIDGET-Model-Core.csproj", "{5BE0C7FF-7166-4EEE-B081-DAFF1F92E69B}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET", "WIDGET\WIDGET.csproj", "{39649C08-8DE1-40A4-AE97-5B988A18843D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIDGET-Exception", "WIDGET-Exception\WIDGET-Exception.csproj", "{1F45C977-9537-4F43-A777-1C610BB3BB9E}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WIDGET-Model", "WIDGET-Model\WIDGET-Model.shproj", "{2CA43E1C-8B19-4C5E-AFAF-8F1446A8E21E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Exception", "WIDGET-Exception\WIDGET-Exception.csproj", "{1F45C977-9537-4F43-A777-1C610BB3BB9E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Object", "WIDGET-Object\WIDGET-Object.csproj", "{36FA2154-9442-4779-9D01-EC60DDE83145}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		WIDGET-Model\WIDGET-Model.projitems*{2ca43e1c-8b19-4c5e-afaf-8f1446a8e21e}*SharedItemsImports = 13
-		WIDGET-Model\WIDGET-Model.projitems*{5be0c7ff-7166-4eee-b081-daff1f92e69b}*SharedItemsImports = 5
-		WIDGET-Model\WIDGET-Model.projitems*{6fb16aee-4282-41f1-b84c-6516981943ec}*SharedItemsImports = 5
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -52,14 +41,6 @@ Global
 		{DD22930A-61D5-444D-BA85-DE0B32032937}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD22930A-61D5-444D-BA85-DE0B32032937}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DD22930A-61D5-444D-BA85-DE0B32032937}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{6FB16AEE-4282-41F1-B84C-6516981943EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6FB16AEE-4282-41F1-B84C-6516981943EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6FB16AEE-4282-41F1-B84C-6516981943EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6FB16AEE-4282-41F1-B84C-6516981943EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5BE0C7FF-7166-4EEE-B081-DAFF1F92E69B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5BE0C7FF-7166-4EEE-B081-DAFF1F92E69B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5BE0C7FF-7166-4EEE-B081-DAFF1F92E69B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5BE0C7FF-7166-4EEE-B081-DAFF1F92E69B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{39649C08-8DE1-40A4-AE97-5B988A18843D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{39649C08-8DE1-40A4-AE97-5B988A18843D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39649C08-8DE1-40A4-AE97-5B988A18843D}.Release|Any CPU.ActiveCfg = Release|Any CPU
