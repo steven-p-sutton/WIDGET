@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Conductus.Widget.Exception;  // Custom exceptions .NET in INFRASTRUCTURE solution
 //using Conductus.Widget.Object.Net; // .NET version of Widget
-using Conductus.Widget.Object;
+//using Conductus.Widget.Object;
+// using WIDGET-Model Shared project - no need for 'using' as source code is importted
 
 // https://exceptionnotfound.net/ef-core-inmemory-asp-net-core-store-database/
 // Install-Package Microsoft.EntityFrameworkCore.SqlServer

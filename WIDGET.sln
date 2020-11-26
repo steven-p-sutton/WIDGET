@@ -29,6 +29,7 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		WIDGET-Model\WIDGET-Model.projitems*{2ca43e1c-8b19-4c5e-afaf-8f1446a8e21e}*SharedItemsImports = 13
 		WIDGET-Model\WIDGET-Model.projitems*{5be0c7ff-7166-4eee-b081-daff1f92e69b}*SharedItemsImports = 5
+		WIDGET-Model\WIDGET-Model.projitems*{6636890e-83b5-4da3-8915-c6d67164d83a}*SharedItemsImports = 5
 		WIDGET-Model\WIDGET-Model.projitems*{6fb16aee-4282-41f1-b84c-6516981943ec}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
