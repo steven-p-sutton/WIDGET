@@ -3,6 +3,7 @@
     public class WidgetAlreadyExistsException : BaseException
     {
         public WidgetAlreadyExistsException()
+             : base()
         {
         }
         public WidgetAlreadyExistsException(string message)
