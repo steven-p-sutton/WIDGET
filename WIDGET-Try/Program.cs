@@ -1,5 +1,6 @@
 ﻿using System;
-using Conductus.Widget.Object; // .NET WIDGET-Object.dll
+//using Conductus.Widget.Object; // .NET WIDGET-Object.dll
+// WIDGET-Model doesn't require 'using' as code is imported in
 
 namespace Conductus.Widget.Try
 {

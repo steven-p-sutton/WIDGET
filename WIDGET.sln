@@ -30,6 +30,7 @@ Global
 		WIDGET-Model\WIDGET-Model.projitems*{2ca43e1c-8b19-4c5e-afaf-8f1446a8e21e}*SharedItemsImports = 13
 		WIDGET-Model\WIDGET-Model.projitems*{5be0c7ff-7166-4eee-b081-daff1f92e69b}*SharedItemsImports = 5
 		WIDGET-Model\WIDGET-Model.projitems*{6fb16aee-4282-41f1-b84c-6516981943ec}*SharedItemsImports = 5
+		WIDGET-Model\WIDGET-Model.projitems*{b9c10296-c758-40c0-be87-1382f4381c46}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
