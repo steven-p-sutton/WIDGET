@@ -9,7 +9,7 @@ using Conductus.Widget.Context;
 // Add if Widget Custom Exceptions explicityly used rather than Syetem.Exception 
 // genertic exception class from wich the Widget custmom exceptions are derived from 
 using Conductus.Widget.Exception;
-using Conductus.Widget.Object;
+//using Conductus.Widget.Object;
 
 namespace Conductus.Widget.Controller
 {
