@@ -1,8 +1,7 @@
-﻿#if (__ExceptionUtility__)
-#else
-#define __ExceptionUtility__
+﻿using System;
 
-    using System;
+namespace Conductus.Widget.Exception
+{
     static public class ExceptionUtility
     {
         static public string Display(System.Exception e, string Name)
@@ -11,8 +10,7 @@
             s = s + Heading.H3 + Heading.Pad + "Name:" + Name + Heading.Pad + Heading.H3 + Environment.NewLine;
             s = s + "       Message:" + e.Message + Environment.NewLine;
             //s = s + " InnerExeption:" + e.InnerException.ToString() + Environment.NewLine;
-            return (s);      
+            return (s);
         }
     }
-
-#endif
+}

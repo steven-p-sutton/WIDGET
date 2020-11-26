@@ -3,11 +3,14 @@
   <PropertyGroup>
     <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
-    <SharedGUID>2ca43e1c-8b19-4c5e-afaf-8f1446a8e21e</SharedGUID>
+    <SharedGUID>3f5ec271-1ea2-4c8c-903c-fc99aa185f72</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
     <Import_RootNamespace>WIDGET_Model</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)clsWidget.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)clsWidgetDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Heading.cs" />
   </ItemGroup>
 </Project>

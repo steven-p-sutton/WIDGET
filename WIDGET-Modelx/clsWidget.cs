@@ -1,30 +1,33 @@
-﻿using System; // Environment
+﻿using System; //Environment
 // Heading class reference from UTILITY-Model project
 
-public class WidgetDTO
+public class WidgetObject
 {
-    // Default (optional) do nothing
-    public WidgetDTO()
+    // Default (optional) initialise to known good values
+    public WidgetObject()
     {
+        Id = 0;
+        Date = DateTimeOffset.MinValue;
+        Name = string.Empty;
+        Count = 0;
+        Secret = string.Empty; 
     }
-    // Create class constructors with multiple parameters
-    public WidgetDTO(DateTimeOffset date)
+    // Createclass constructors with multiple parameters
+    public WidgetObject(DateTimeOffset date)
     {
         Date = date;
     }
-    public WidgetDTO(WidgetObject widget)
+    public WidgetObject(DateTimeOffset date, string secret)
     {
-        Id = widget.Id;
-        Date = widget.Date;
-        Name = widget.Name;
-        Count = widget.Count;
+        Date = date;
+        Secret = secret;
     }
-    public WidgetDTO WidgetToDTO(WidgetObject widget) => new WidgetDTO(widget);
     public long Id { get; set; }
     public DateTimeOffset Date { get; set; }
     public string Name { get; set; }
     public int Count { get; set; }
-    public string Display(string title)
+    public string Secret { get; set; } // not included in DTO version of class.
+    public string Display (string title)
     {
         string s = Environment.NewLine;
         s = s + Heading.H4 + " " + title + " " + Heading.H4 + Environment.NewLine;
@@ -32,6 +35,7 @@ public class WidgetDTO
         s = s + "  Date: " + this.Date.ToString() + Environment.NewLine;
         s = s + "  Name: " + this.Name + Environment.NewLine;
         s = s + " Count: " + this.Count.ToString() + Environment.NewLine;
+        s = s + "Secret: " + this.Secret.ToString() + Environment.NewLine;
         s = s + Environment.NewLine;
         return s;
     }
