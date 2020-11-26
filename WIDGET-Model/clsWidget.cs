@@ -10,7 +10,7 @@ public class WidgetObject
         Date = DateTimeOffset.MinValue;
         Name = string.Empty;
         Count = 0;
-        Secret = string.Empty; 
+        Secret = string.Empty;
     }
     // Createclass constructors with multiple parameters
     public WidgetObject(DateTimeOffset date)
@@ -27,7 +27,7 @@ public class WidgetObject
     public string Name { get; set; }
     public int Count { get; set; }
     public string Secret { get; set; } // not included in DTO version of class.
-    public string Display (string title)
+    public string Display(string title)
     {
         string s = Environment.NewLine;
         s = s + Heading.H4 + " " + title + " " + Heading.H4 + Environment.NewLine;

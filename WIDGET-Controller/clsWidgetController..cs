@@ -8,6 +8,8 @@ using Microsoft.Extensions.Logging;
 using Conductus.Widget.Context;
 // Add if Widget Custom Exceptions explicityly used rather than Syetem.Exception 
 // genertic exception class from wich the Widget custmom exceptions are derived from 
+using Conductus.Widget.Exception;
+using Conductus.Widget.Object;
 
 namespace Conductus.Widget.Controller
 {
@@ -48,7 +50,7 @@ namespace Conductus.Widget.Controller
                 // need to pack <IEnumerable<WidgetDTO>> into ActionResult 
                 return CreatedAtAction(nameof(GetWidgets), widgets);
             }
-            catch (Exception e)
+            catch (System.Exception e)
             {
                 // Logging added
                 _logger.LogError(e, "NoContent");
@@ -69,7 +71,7 @@ namespace Conductus.Widget.Controller
                 var responseWidgetidget = await _context.Get(id);
                 return responseWidgetidget;
             }
-            catch (Exception e)
+            catch (System.Exception e)
             {
                 // Logging added
                 _logger.LogError(e, "NotFound");
@@ -96,7 +98,7 @@ namespace Conductus.Widget.Controller
                 var responseWidgetDTO = await _context.Update(widgetDTO);
                 return Ok();
             }
-            catch (Exception e)
+            catch (System.Exception e)
             {
                 // Logging added
                 _logger.LogError(e, "UnprocessableEntity");
@@ -118,7 +120,7 @@ namespace Conductus.Widget.Controller
 
                 return Ok();
             }
-            catch (Exception e)
+            catch (System.Exception e)
             {
                 // Logging added
                 _logger.LogError(e, "UnprocessableEntity");
@@ -140,7 +142,7 @@ namespace Conductus.Widget.Controller
 
                 return Ok();
             }
-            catch (Exception e)
+            catch (System.Exception e)
             {
                 // Logging added
                 _logger.LogError(e, "UnprocessableEntity");

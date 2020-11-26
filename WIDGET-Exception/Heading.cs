@@ -1,8 +1,6 @@
-﻿#if (__HEADING__)
-#else
-#define __HEADING__
-
-    using System;
+﻿using System;
+namespace Conductus.Widget.Exception
+{
     static public class Heading
     {
         static public string H1
@@ -34,4 +32,4 @@
             get { return new String('-', 80); }
         }
     }
-#endif
+}

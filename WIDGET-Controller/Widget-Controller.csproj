@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Widget-Context\Widget-Context.csproj" />
+    <ProjectReference Include="..\WIDGET-Exception\WIDGET-Exception.csproj" />
+    <ProjectReference Include="..\WIDGET-Object\WIDGET-Object.csproj" />
   </ItemGroup>
 
 </Project>

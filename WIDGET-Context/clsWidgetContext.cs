@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Conductus.Widget.Exceptions.Net;  // Custom exceptions .NET in INFRASTRUCTURE solution
-//using Conductus.Widget.Object.Net;      // .NET version of Widget
-//using WIDGET.Model.Net;
+using Conductus.Widget.Exception;  // Custom exceptions .NET in INFRASTRUCTURE solution
+//using Conductus.Widget.Object.Net; // .NET version of Widget
+using Conductus.Widget.Object;
 
 // https://exceptionnotfound.net/ef-core-inmemory-asp-net-core-store-database/
 // Install-Package Microsoft.EntityFrameworkCore.SqlServer
