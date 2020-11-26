@@ -49,6 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <Import Project="..\WIDGET-Model\WIDGET-Model.projitems" Label="Shared" />
+  <ItemGroup>
+    <ProjectReference Include="..\WIDGET-Model-Net\WIDGET-Model-Net.csproj">
+      <Project>{6fb16aee-4282-41f1-b84c-6516981943ec}</Project>
+      <Name>WIDGET-Model-Net</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
