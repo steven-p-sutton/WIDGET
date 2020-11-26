@@ -23,7 +23,7 @@ namespace Conductus.Widget.Try
             }
             catch (WidgetNotFoundException e)
             {
-                ExceptionUtility.Display(e, "wd");
+                e.Display();
             }
         }
     }
