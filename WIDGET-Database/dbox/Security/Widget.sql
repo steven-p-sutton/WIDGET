@@ -1,0 +1,6 @@
+﻿CREATE USER [Widget]
+	WITH PASSWORD = 'widget'
+
+GO
+
+GRANT CONNECT TO [Widget]
