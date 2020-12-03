@@ -1,4 +1,3 @@
-﻿/*
 DROP LOGIN Widget;
 
 CREATE LOGIN [Widget] 
@@ -11,7 +10,7 @@ GO
 
 ALTER LOGIN [Widget] ENABLE;
 
-ALTER LOGIN Widget WITH PASSWORD = 'widget';
+ALTER LOGIN Widget WITH PASSWORD = 'widget' UNLOCK ;
 go
 ALTER LOGIN Widget WITH PASSWORD = '<enterStrongPasswordHere>';
 go
@@ -23,9 +22,3 @@ GRANT SELECT  ON [Widget] TO [Widget];
 GRANT UPDATE  ON [Widget] TO [Widget];
 GRANT DELETE  ON [Widget] TO [Widget];
 GRANT EXECUTE ON [Widget] TO [Widget];
-*/
-
-
-
-
-

@@ -10,4 +10,11 @@ AS
    FROM Widget  
 END  
 GO
+
+
+DECLARE	@return_value int
+EXEC	@return_value = [dbo].[SP_WIDGET_GET_LIST]
+SELECT	'Return Value' = @return_value
+
+GO
 */
