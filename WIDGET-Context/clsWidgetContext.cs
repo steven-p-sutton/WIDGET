@@ -39,7 +39,6 @@ namespace Conductus.Widget.Context
             {
                 return;
             }
-            //var rng = new Random();
 
             for (int i = 1; i < 10; i++)
             {
@@ -64,7 +63,6 @@ namespace Conductus.Widget.Context
                 .Select(x => new WidgetDTO(x))
                 .ToListAsync();
         }
-
         public async Task<WidgetDTO> Get(long id)
         {
             var widget = await this.Widgets.FindAsync(id);
@@ -91,8 +89,6 @@ namespace Conductus.Widget.Context
             }
 
             widget.Date = widgetDTO.Date;
-            //widget.TemperatureC = widgetDTO.TemperatureC;
-            //widget.Summaryx = widgetDTO.Summaryx;
 
             await this.SaveChangesAsync();
 
@@ -114,8 +110,6 @@ namespace Conductus.Widget.Context
             {
                 Id = widgetDTO.Id,
                 Date = widgetDTO.Date,
-                //TemperatureC = widgetDTO.TemperatureC,
-                //Summaryx = widgetDTO.Summaryx,
                 Secret = string.Empty
             };
 

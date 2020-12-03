@@ -1,12 +1,14 @@
-﻿/****** Script for SelectTopNRows command from SSMS  ******/
+﻿/*
 SELECT TOP (1000) [Id]
       ,[Date]
       ,[Name]
       ,[Count]
       ,[Secret]
   FROM [Widget].[dbo].[Widget]
+go
 
 DELETE FROM [dbo].[Widget]
+go
 
 INSERT INTO [dbo].[Widget] ([Date], [Name], [Count], [Secret]) 
 	VALUES (N'20200101', N'Widget01', 100, N'Secret01')
@@ -37,3 +39,5 @@ INSERT INTO [dbo].[Widget] ([Date], [Name], [Count], [Secret])
 
 INSERT INTO [dbo].[Widget] ([Date], [Name], [Count], [Secret]) 
 	VALUES (N'20200110', N'Widget10', 100, N'Secret10')
+go
+*/
