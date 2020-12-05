@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EXCEPTION-Model-Net">
+      <HintPath>..\..\INFRASTRUCTURE\EXCEPTION-Model-Net\bin\Debug\netstandard2.0\EXCEPTION-Model-Net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,6 +44,13 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WIDGET-Exception-Model-Net">
+      <HintPath>..\WIDGET-Exception-Model-Net\bin\Debug\netstandard2.0\WIDGET-Exception-Model-Net.dll</HintPath>
+    </Reference>
+    <Reference Include="WIDGET-Model-Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WIDGET-Model-Net\bin\Debug\netstandard2.0\WIDGET-Model-Net.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -48,20 +58,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UTILITY-Model-Net\UTILITY-Model-Net.csproj">
-      <Project>{548e1a46-f68d-4081-824f-ffa52920b4e4}</Project>
-      <Name>UTILITY-Model-Net</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WIDGET-Exception\WIDGET-Exception.csproj">
-      <Project>{1f45c977-9537-4f43-a777-1c610bb3bb9e}</Project>
-      <Name>WIDGET-Exception</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WIDGET-Model-Net\WIDGET-Model-Net.csproj">
-      <Project>{6fb16aee-4282-41f1-b84c-6516981943ec}</Project>
-      <Name>WIDGET-Model-Net</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

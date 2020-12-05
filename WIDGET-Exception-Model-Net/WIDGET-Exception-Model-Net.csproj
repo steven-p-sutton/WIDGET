@@ -2,14 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>WIDGET_Model_Net</RootNamespace>
+    <RootNamespace>WIDGET_Exception_Model_Net</RootNamespace>
   </PropertyGroup>
 
-  <Import Project="..\WIDGET-Model\WIDGET-Model.projitems" Label="Shared" />
+  <Import Project="..\WIDGET-Exception-Model\WIDGET-Exception-Model.projitems" Label="Shared" />
 
   <ItemGroup>
     <Reference Include="EXCEPTION-Model-Net">
       <HintPath>..\..\INFRASTRUCTURE\EXCEPTION-Model-Net\bin\Debug\netstandard2.0\EXCEPTION-Model-Net.dll</HintPath>
+    </Reference>
+    <Reference Include="UTILITY-Model-Net">
+      <HintPath>..\..\INFRASTRUCTURE\UTILITY-Model-Net\bin\Debug\netstandard2.0\UTILITY-Model-Net.dll</HintPath>
     </Reference>
   </ItemGroup>
 
