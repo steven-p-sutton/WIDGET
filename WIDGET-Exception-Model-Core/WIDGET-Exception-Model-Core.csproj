@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>WIDGET_Exception_Model_Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="EXCEPTION-Model-Core">
+      <HintPath>..\..\INFRASTRUCTURE\EXCEPTION-Model-Core\bin\Debug\netcoreapp3.1\EXCEPTION-Model-Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UTILITY-Model-Core">
+      <HintPath>..\..\INFRASTRUCTURE\UTILITY-Model-Core\bin\Debug\netcoreapp3.1\UTILITY-Model-Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Import Project="..\WIDGET-Exception-Model\WIDGET-Exception-Model.projitems" Label="Shared" />
+
+</Project>
