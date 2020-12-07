@@ -18,9 +18,9 @@ namespace Conductus.Widget.Controller
         // Logging added
         private readonly ILogger<WidgetController> _logger;
 
-        private readonly WidgetContext _context;
+        private readonly WidgetContextMemory _context;
 
-        public WidgetController(WidgetContext context, ILogger<WidgetController> logger)
+        public WidgetController(WidgetContextMemory context, ILogger<WidgetController> logger)
         {
             _context = context;
             // Logging added

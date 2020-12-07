@@ -18,9 +18,9 @@ using Conductus.Widget.Exception;
 
 namespace Conductus.Widget.Context
 {
-    public class WidgetContext : DbContext
+    public class WidgetContextDB : DbContext
     {
-        public WidgetContext(DbContextOptions<WidgetContext> options)
+        public WidgetContextDB(DbContextOptions<WidgetContextDB> options)
             : base(options)
         {
         }
