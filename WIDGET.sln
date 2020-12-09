@@ -23,9 +23,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIDGET-Try", "WIDGET-Try\WI
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WIDGET-Exception-Model", "WIDGET-Exception-Model\WIDGET-Exception-Model.shproj", "{F18B7195-5034-46D5-B6DA-D54309A96B43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIDGET-Exception-Model-Net", "WIDGET-Exception-Model-Net\WIDGET-Exception-Model-Net.csproj", "{877CE0FA-D393-4834-88E9-05B09933CF42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Exception-Model-Net", "WIDGET-Exception-Model-Net\WIDGET-Exception-Model-Net.csproj", "{877CE0FA-D393-4834-88E9-05B09933CF42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIDGET-Exception-Model-Core", "WIDGET-Exception-Model-Core\WIDGET-Exception-Model-Core.csproj", "{773FBA9A-79BD-4B24-AF36-A329BCDCC53A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Exception-Model-Core", "WIDGET-Exception-Model-Core\WIDGET-Exception-Model-Core.csproj", "{773FBA9A-79BD-4B24-AF36-A329BCDCC53A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Console", "WIDGET-Console\WIDGET-Console.csproj", "{6F755F56-8CD9-4CAC-A302-8CC3E69E7CBD}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -83,6 +85,10 @@ Global
 		{773FBA9A-79BD-4B24-AF36-A329BCDCC53A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{773FBA9A-79BD-4B24-AF36-A329BCDCC53A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{773FBA9A-79BD-4B24-AF36-A329BCDCC53A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F755F56-8CD9-4CAC-A302-8CC3E69E7CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F755F56-8CD9-4CAC-A302-8CC3E69E7CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F755F56-8CD9-4CAC-A302-8CC3E69E7CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F755F56-8CD9-4CAC-A302-8CC3E69E7CBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
