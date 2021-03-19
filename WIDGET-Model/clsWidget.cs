@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class WidgetObject
+public class WidgetObject : IWidget
 {
     // Default (optional) initialise to known good values
     public WidgetObject()

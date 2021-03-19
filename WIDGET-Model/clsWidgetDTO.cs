@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class WidgetDTO
+public class WidgetDTO : IWidget
 {
     // Default (optional) do nothing
     public WidgetDTO()
@@ -38,5 +38,4 @@ public class WidgetDTO
     {
         return x + y;
     }
-}
 }
