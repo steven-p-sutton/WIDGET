@@ -9,11 +9,11 @@ namespace Conductus.Widget.Try
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello WIDGET-Try World!");
+            WidgetObject w = new WidgetObject();
 
             try
             {
-                WidgetObject w = new WidgetObject();
+
                 w.Id = 1;
                 w.Display("w");
 
@@ -26,7 +26,8 @@ namespace Conductus.Widget.Try
             }
             catch (WidgetNotImplentedException e)
             {
-                e.Display();
+                Console.WriteLine(e.Display());
+                Console.WriteLine(w.Display("Widget In Error"));
             }
         }
     }

@@ -1,0 +1,4 @@
+2021-03-19T09:22:18.3920665+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-19T09:22:18.4609799+00:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-19T09:22:18.4713815+00:00  [INF] Content root path: "C:\Users\steve\Documents\Visual Studio Work\WIDGET\WIDGET-API" (b5d60022)
+2021-03-19T09:22:19.1997101+00:00 80000002-0000-fc00-b63f-84710c7967bb [INF] GET: widget (1b26113d)

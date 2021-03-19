@@ -34,4 +34,9 @@ public class WidgetDTO
         s = s + Environment.NewLine;
         return s;
     }
+    public int Ping(int x, int y)
+    {
+        return x + y;
+    }
+}
 }
