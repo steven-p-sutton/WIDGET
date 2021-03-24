@@ -39,4 +39,3 @@ public class WidgetDTO
         return x + y;
     }
 }
-}

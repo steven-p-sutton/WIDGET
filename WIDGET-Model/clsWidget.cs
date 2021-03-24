@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class WidgetObject
+public class WidgetObject : IWidget
 {
     // Default (optional) initialise to known good values
     public WidgetObject()
@@ -26,7 +26,7 @@ public class WidgetObject
     public string Name { get; set; }
     public int Count { get; set; }
     public string Secret { get; set; } // not included in DTO version of class.
-    public string Display(string title)
+    public virtual string Display(string title)
     {
         string s = Environment.NewLine;
         s = s + Heading.H4 + " " + title + " " + Heading.H4 + Environment.NewLine;
@@ -38,7 +38,7 @@ public class WidgetObject
         s = s + Environment.NewLine;
         return s;
     }
-    public int Ping (int x, int y)
+    public virtual int Ping (int x, int y)
     {
         return x + y;
     }

@@ -10,12 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Widget-Context\Widget-Context.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="WIDGET-Model-Net">
-      <HintPath>..\WIDGET-Model-Net\bin\Debug\netstandard2.0\WIDGET-Model-Net.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\WIDGET-Model-Net\WIDGET-Model-Net.csproj" />
   </ItemGroup>
 
 </Project>

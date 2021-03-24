@@ -9,14 +9,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WIDGET-Exception-Model-Net\WIDGET-Exception-Model-Net.csproj" />
+    <ProjectReference Include="..\WIDGET-Model-Net\WIDGET-Model-Net.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="EXCEPTION-Model-Net">
       <HintPath>..\..\INFRASTRUCTURE\EXCEPTION-Model-Net\bin\Debug\netstandard2.0\EXCEPTION-Model-Net.dll</HintPath>
-    </Reference>
-    <Reference Include="WIDGET-Exception-Model-Net">
-      <HintPath>..\WIDGET-Exception-Model-Net\bin\Debug\netstandard2.0\WIDGET-Exception-Model-Net.dll</HintPath>
-    </Reference>
-    <Reference Include="WIDGET-Model-Net">
-      <HintPath>..\WIDGET-Model-Net\bin\Debug\netstandard2.0\WIDGET-Model-Net.dll</HintPath>
     </Reference>
   </ItemGroup>
 
