@@ -12,12 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\INFRASTRUCTURE\MOCK-Framework-CORE\MOCK-Framework-CORE.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="EXCEPTION-Model-Net">
       <HintPath>..\..\INFRASTRUCTURE\EXCEPTION-Model-Net\bin\Debug\netstandard2.0\EXCEPTION-Model-Net.dll</HintPath>
+    </Reference>
+    <Reference Include="MOCK-Framework-CORE">
+      <HintPath>..\..\INFRASTRUCTURE\MOCK-Framework-CORE\bin\Debug\netcoreapp3.1\MOCK-Framework-CORE.dll</HintPath>
     </Reference>
   </ItemGroup>
 
