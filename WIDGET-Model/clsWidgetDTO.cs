@@ -11,14 +11,14 @@ public class WidgetDTO
     {
         Date = date;
     }
-    public WidgetDTO(WidgetObject widget)
+    public WidgetDTO(Widget widget)
     {
         Id = widget.Id;
         Date = widget.Date;
         Name = widget.Name;
         Count = widget.Count;
     }
-    public WidgetDTO WidgetToDTO(WidgetObject widget) => new WidgetDTO(widget);
+    public WidgetDTO WidgetToDTO(Widget widget) => new WidgetDTO(widget);
     public long Id { get; set; }
     public DateTimeOffset Date { get; set; }
     public string Name { get; set; }

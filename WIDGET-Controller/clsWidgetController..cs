@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Conductus.Widget.Context;
+using Conductus.WIDGET.Context;
 
-namespace Conductus.Widget.Controller
+namespace Conductus.WIDGET.Controller
 {
 
     // https://exceptionnotfound.net/ef-core-inmemory-asp-net-core-store-database/

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Conductus.Widget.Exception;
+using Conductus.WIDGET.Exception;
 
 // https://exceptionnotfound.net/ef-core-inmemory-asp-net-core-store-database/
 // Install-Package Microsoft.EntityFrameworkCore.SqlServer
@@ -16,7 +16,7 @@ using Conductus.Widget.Exception;
 // https://docs.microsoft.com/en-us/dotnet/standard/exceptions/how-to-explicitly-throw-exceptions
 // https://docs.microsoft.com/en-us/dotnet/api/system.string.format?view=netcore-3.1
 
-namespace Conductus.Widget.Context
+namespace Conductus.WIDGET.Context
 {
     public class WidgetContextMemory : DbContext
     {
@@ -24,7 +24,7 @@ namespace Conductus.Widget.Context
             : base(options)
         {
         }
-        public DbSet<WidgetObject> Widgets { get; set; }
+        public DbSet<Widget> Widgets { get; set; }
 
         // Dummy data setup so that InMemory database has 4 initial records in it
         private static readonly string[] Names = new[]
@@ -42,7 +42,7 @@ namespace Conductus.Widget.Context
 
             for (int i = 1; i < 10; i++)
             {
-                var widget = new WidgetObject
+                var widget = new Widget
                 {
                     Id = i,
                     Date = DateTime.Now.AddDays(i),
@@ -106,7 +106,7 @@ namespace Conductus.Widget.Context
                 );
             }
 
-            widget = new WidgetObject
+            widget = new Widget
             {
                 Id = widgetDTO.Id,
                 Date = widgetDTO.Date,

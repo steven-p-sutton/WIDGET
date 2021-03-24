@@ -11,9 +11,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore; // In Memory Datastore
-using Conductus.Widget.Context;
+using Conductus.WIDGET.Context;
 
-namespace Conductus.Widget.API
+namespace Conductus.WIDGET.API
 {
     // InMemory Databaase
     // https://exceptionnotfound.net/ef-core-inmemory-asp-net-core-store-database/

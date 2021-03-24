@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Conductus.Widget.API
+namespace Conductus.WIDGET.API
 {
     public class Program
     {

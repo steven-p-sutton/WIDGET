@@ -1,5 +1,5 @@
-﻿namespace Conductus.Widget.Exception
-{
+﻿//namespace Conductus.WIDGET.Exception
+//{
     public class WidgetAlreadyExistsException : BaseException
     {
         public WidgetAlreadyExistsException()
@@ -19,4 +19,4 @@
             return ExceptionUtility.Display(this, "WidgetAlreadyExistsException");
         }
     }
-}
+//}

@@ -1,9 +1,9 @@
 ﻿using System;
 
-public class WidgetObject : IWidget
+public class Widget : IWidget
 {
     // Default (optional) initialise to known good values
-    public WidgetObject()
+    public Widget()
     {
         Id = 0;
         Date = DateTimeOffset.MinValue;
@@ -12,11 +12,11 @@ public class WidgetObject : IWidget
         Secret = string.Empty;
     }
     // Createclass constructors with multiple parameters
-    public WidgetObject(DateTimeOffset date)
+    public Widget(DateTimeOffset date)
     {
         Date = date;
     }
-    public WidgetObject(DateTimeOffset date, string secret)
+    public Widget(DateTimeOffset date, string secret)
     {
         Date = date;
         Secret = secret;

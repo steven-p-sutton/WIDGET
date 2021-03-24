@@ -2,7 +2,7 @@
 
 namespace SQLCoreApp.Model
 {
-    public class WidgetModel : WidgetObject
+    public class WidgetModel : Widget
     {
         // Uses WIDGET-Model assembly to define WidgetObject
         // Also UTILITY-Model as a dependency

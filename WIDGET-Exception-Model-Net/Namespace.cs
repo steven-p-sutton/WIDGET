@@ -1,4 +1,4 @@
-﻿namespace Conductus.Widget.Exception.Net
+﻿namespace Conductus.WIDGET.Exception.Net
 {
     public class Namespace
     {

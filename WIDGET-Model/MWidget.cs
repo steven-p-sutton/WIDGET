@@ -4,12 +4,12 @@ using MOCK.Framework;
 
 public class MWidget : IMock
     {
-        public Mock<WidgetObject> _mMock;
+        public Mock<Widget> _mMock;
         public MWidget()
         {
-            _mMock = new Mock<WidgetObject>();
+            _mMock = new Mock<Widget>();
         }
-        public Mock<WidgetObject> Mock
+        public Mock<Widget> Mock
         {
             get => _mMock;
         }
