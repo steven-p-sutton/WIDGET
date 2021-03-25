@@ -9,8 +9,8 @@
     <Import_RootNamespace>WIDGET_Exception_Model</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)clsWidgetAlreadyExistsException.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)clsWidgetNotFoundException.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)clsWidgetNotImplentedException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WidgetAlreadyExistsException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WidgetNotFoundException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WidgetNotImplentedException.cs" />
   </ItemGroup>
 </Project>

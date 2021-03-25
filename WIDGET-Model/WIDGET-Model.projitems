@@ -9,8 +9,8 @@
     <Import_RootNamespace>WIDGET_Model</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)clsWidget.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)clsWidgetDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Widget.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WidgetDTO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IWidget.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MWidget.cs" />
   </ItemGroup>
