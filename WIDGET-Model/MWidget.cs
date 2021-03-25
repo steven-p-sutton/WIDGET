@@ -1,6 +1,6 @@
 ﻿using System;
 using Moq;
-using MOCK.Framework;
+//using MOCK.Framework;
 
 public class MWidget : IMock
     {
