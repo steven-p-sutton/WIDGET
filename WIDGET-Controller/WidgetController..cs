@@ -7,6 +7,7 @@ using Conductus.WIDGET.Context;
 
 namespace Conductus.WIDGET.Controller
 {
+    // https://localhost:44365/widget
 
     // https://exceptionnotfound.net/ef-core-inmemory-asp-net-core-store-database/
 
@@ -28,6 +29,7 @@ namespace Conductus.WIDGET.Controller
         }
 
         // GET: widget
+        // https://localhost:44365/widget
         [HttpGet]
         public async Task<ActionResult<IEnumerable<WidgetDTO>>> GetWidgets()
         {

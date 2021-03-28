@@ -29,6 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Exception-Model-Core
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WIDGET-Console", "WIDGET-Console\WIDGET-Console.csproj", "{6F755F56-8CD9-4CAC-A302-8CC3E69E7CBD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F3E3E285-361C-499C-9644-1CBDDEC5517F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\WIDGET.postman_collection.json = ..\..\..\Downloads\WIDGET.postman_collection.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		WIDGET-Model\WIDGET-Model.projitems*{2ca43e1c-8b19-4c5e-afaf-8f1446a8e21e}*SharedItemsImports = 13

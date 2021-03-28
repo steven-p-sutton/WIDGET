@@ -7,6 +7,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
+// http://localhost:51022
+// https://localhost:44365/widget
+
 namespace Conductus.WIDGET.API
 {
     public class Program
