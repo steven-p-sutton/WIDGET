@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>CODERUN_MyRunner</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CODERUN-Widget\CODERUN-Widget.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CODERUN-Library-Core">
+      <HintPath>..\..\INFRASTRUCTURE\CODERUN-Model-Core\bin\Debug\netcoreapp3.1\CODERUN-Library-Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
