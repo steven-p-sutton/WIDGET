@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 public class WidgetDTO
 {
@@ -19,9 +20,13 @@ public class WidgetDTO
         Count = widget.Count;
     }
     public WidgetDTO WidgetToDTO(Widget widget) => new WidgetDTO(widget);
+    [JsonProperty("id")]
     public long Id { get; set; }
+    [JsonProperty("date")]
     public DateTimeOffset Date { get; set; }
+    [JsonProperty("name")]
     public string Name { get; set; }
+    [JsonProperty("count")]
     public int Count { get; set; }
     public string Display(string title)
     {

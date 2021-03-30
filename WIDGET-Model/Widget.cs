@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 public class Widget : IWidget
 {
@@ -21,10 +22,15 @@ public class Widget : IWidget
         Date = date;
         Secret = secret;
     }
+    [JsonProperty("id")]
     public long Id { get; set; }
+    [JsonProperty("date")]
     public DateTimeOffset Date { get; set; }
+    [JsonProperty("name")]
     public string Name { get; set; }
+    [JsonProperty("count")]
     public int Count { get; set; }
+    [JsonProperty("secret")]
     public string Secret { get; set; } // not included in DTO version of class.
     public virtual string Display(string title)
     {
