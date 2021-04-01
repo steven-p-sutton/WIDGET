@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <Reference Include="CODERUN-Library-Core">
-      <HintPath>..\..\INFRASTRUCTURE\CODERUN-Model-Core\bin\Debug\netcoreapp3.1\CODERUN-Library-Core.dll</HintPath>
+      <HintPath>..\..\INFRASTRUCTURE\CODERUN-Library-Core\bin\Debug\netcoreapp3.1\CODERUN-Library-Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 

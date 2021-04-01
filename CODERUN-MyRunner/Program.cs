@@ -9,7 +9,7 @@ namespace CODERUN_MyRunner
         static void Main(string[] args)
         {
             var wd = new WidgetCodeRun();
-            CodeRunFramework.Run(wd);
+            CodeRun.Run(wd);
         }
     }
 }
