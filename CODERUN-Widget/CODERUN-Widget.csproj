@@ -6,16 +6,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WIDGET-Model-Core\WIDGET-Model-Core.csproj" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="CODERUN-Library-Core">
-      <HintPath>..\..\INFRASTRUCTURE\CODERUN-Library-Core\bin\Debug\netcoreapp3.1\CODERUN-Library-Core.dll</HintPath>
+    <Reference Include="CODERUN-Model-Core">
+      <HintPath>..\..\INFRASTRUCTURE\CODERUN-Model-Core\bin\Debug\netcoreapp3.1\CODERUN-Model-Core.dll</HintPath>
     </Reference>
-    <Reference Include="MOCK-Framework-CORE">
-      <HintPath>..\..\INFRASTRUCTURE\MOCK-Framework-CORE\bin\Debug\netcoreapp3.1\MOCK-Framework-CORE.dll</HintPath>
+    <Reference Include="MOCK-Model-Core">
+      <HintPath>..\..\INFRASTRUCTURE\MOCK-Model-Core\bin\Debug\netcoreapp3.1\MOCK-Model-Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UTILITY-Model-Core">
+      <HintPath>..\..\INFRASTRUCTURE\UTILITY-Model-Core\bin\Debug\netcoreapp3.1\UTILITY-Model-Core.dll</HintPath>
     </Reference>
   </ItemGroup>
+
+  <Import Project="..\WIDGET-Model\WIDGET-Model.projitems" Label="Shared" />
 
 </Project>

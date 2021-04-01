@@ -1,7 +1,7 @@
 ﻿using System;
-using Conductus.CODERUN.Library.Core;
-using Conductus.MOCK.Framework.Core;
-using Conductus.WIDGET.Model.Core;
+using Conductus.CODERUN.Model.Core;
+using Conductus.MOCK.Model.Core;
+//using Conductus.WIDGET.Model.Core;
 
 namespace Conductus.CODERUN.WIDGET
 {

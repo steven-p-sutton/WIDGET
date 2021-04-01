@@ -49,6 +49,7 @@ Global
 		WIDGET-Model\WIDGET-Model.projitems*{6fb16aee-4282-41f1-b84c-6516981943ec}*SharedItemsImports = 5
 		WIDGET-Exception-Model\WIDGET-Exception-Model.projitems*{773fba9a-79bd-4b24-af36-a329bcdcc53a}*SharedItemsImports = 5
 		WIDGET-Exception-Model\WIDGET-Exception-Model.projitems*{877ce0fa-d393-4834-88e9-05b09933cf42}*SharedItemsImports = 5
+		WIDGET-Model\WIDGET-Model.projitems*{f0491f21-bb55-402f-85bd-d65c696ec2fb}*SharedItemsImports = 5
 		WIDGET-Exception-Model\WIDGET-Exception-Model.projitems*{f18b7195-5034-46d5-b6da-d54309a96b43}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

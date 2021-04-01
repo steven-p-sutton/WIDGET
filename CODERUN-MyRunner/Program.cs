@@ -1,5 +1,5 @@
 ﻿using System;
-using Conductus.CODERUN.Library.Core;
+using Conductus.CODERUN.Model.Core;
 using Conductus.CODERUN.WIDGET;
 
 namespace CODERUN_MyRunner
