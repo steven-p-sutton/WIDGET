@@ -1,8 +1,8 @@
 ﻿using System;
 using Conductus.CODERUN.Model.Core;
-using Conductus.CODERUN.WIDGET;
+using Conductus.WIDGET.CODERUN;
 
-namespace CODERUN_MyRunner
+namespace Conductus.CODERUN.Runner
 {
     class Program
     {

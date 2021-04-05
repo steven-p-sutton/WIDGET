@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Conductus.APP.EXAMPLE
+namespace Conductus.WIDGET.App
 {
     class Program
     {

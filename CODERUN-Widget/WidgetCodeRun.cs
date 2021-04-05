@@ -3,7 +3,7 @@ using Conductus.CODERUN.Model.Core;
 using Conductus.MOCK.Model.Core;
 //using Conductus.WIDGET.Model.Core;
 
-namespace Conductus.CODERUN.WIDGET
+namespace Conductus.WIDGET.CODERUN
 {
     public class WidgetCodeRun : ICodeRunModule
     {

@@ -3,7 +3,7 @@ using Xunit;
 using Conductus.MOCK.Model.Core;
 using Conductus.WIDGET.Model.Core;
 
-namespace TEST_Employee
+namespace Conductus.WIDGET.Test
 {
     public class UnitTest
     {
@@ -43,7 +43,7 @@ namespace TEST_Employee
         public void Test4_TWidget_Ping()
         {
             var testWidget = new TWidget();
-            Assert.Equal(testWidget.Ping(), 3);
+            Assert.Equal(3, testWidget.Ping());
         }
         [Fact]
         public void Test4_TWidget_Display()
