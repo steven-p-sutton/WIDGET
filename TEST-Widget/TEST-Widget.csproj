@@ -22,8 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="MOCK-Framework-CORE">
-      <HintPath>..\..\INFRASTRUCTURE\MOCK-Framework-CORE\bin\Debug\netcoreapp3.1\MOCK-Framework-CORE.dll</HintPath>
+    <Reference Include="MOCK-Model-Core">
+      <HintPath>..\..\INFRASTRUCTURE\MOCK-Model-Core\bin\Debug\netcoreapp3.1\MOCK-Model-Core.dll</HintPath>
     </Reference>
     <Reference Include="WIDGET-Model-Core">
       <HintPath>..\..\WIDGET\WIDGET-Model-Core\bin\Debug\netcoreapp3.1\WIDGET-Model-Core.dll</HintPath>

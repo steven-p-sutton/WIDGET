@@ -30,13 +30,14 @@ public class WidgetDTO
     public int Count { get; set; }
     public string Display(string title)
     {
-        string s = Environment.NewLine;
-        s = s + Heading.H4 + " " + title + " " + Heading.H4 + Environment.NewLine;
-        s = s + "    Id: " + this.Id.ToString() + Environment.NewLine;
-        s = s + "  Date: " + this.Date.ToString() + Environment.NewLine;
-        s = s + "  Name: " + this.Name + Environment.NewLine;
-        s = s + " Count: " + this.Count.ToString() + Environment.NewLine;
-        s = s + Environment.NewLine;
+        string s = string.Empty;
+        s = s + s.CRLF();
+        s = s + s.H4() + " " + title + " " + s.H4() + s.CRLF();
+        s = s + "    Id: " + this.Id.ToString() + s.CRLF();
+        s = s + "  Date: " + this.Date.ToString() + s.CRLF();
+        s = s + "  Name: " + this.Name + s.CRLF();
+        s = s + " Count: " + this.Count.ToString() + s.CRLF();
+        s = s + s.CRLF();
         return s;
     }
     public int Ping(int x, int y)
