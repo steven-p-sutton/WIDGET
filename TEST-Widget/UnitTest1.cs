@@ -55,7 +55,7 @@ namespace TEST_Employee
         public void Test5_Widget_Ping()
         {
             var widget = new Widget();
-            Assert.Equal(widget.Ping(1,2), 3);
+            Assert.Equal(3, widget.Ping(1,2));
         }
         [Fact]
         public void Test6_Widget_Display()
