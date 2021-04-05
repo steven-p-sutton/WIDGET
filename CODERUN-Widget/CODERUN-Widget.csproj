@@ -14,6 +14,9 @@
     <Reference Include="CODERUN-Model-Core">
       <HintPath>..\..\INFRASTRUCTURE\CODERUN-Model-Core\bin\Debug\netcoreapp3.1\CODERUN-Model-Core.dll</HintPath>
     </Reference>
+    <Reference Include="EXTENSION-Model-Core">
+      <HintPath>..\..\INFRASTRUCTURE\EXTENSION-Model-Core\bin\Debug\netcoreapp3.1\EXTENSION-Model-Core.dll</HintPath>
+    </Reference>
     <Reference Include="MOCK-Model-Core">
       <HintPath>..\..\INFRASTRUCTURE\MOCK-Model-Core\bin\Debug\netcoreapp3.1\MOCK-Model-Core.dll</HintPath>
     </Reference>
