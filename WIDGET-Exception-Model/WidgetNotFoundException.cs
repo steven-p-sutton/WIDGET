@@ -3,6 +3,7 @@ public class WidgetNotFoundException : BaseException
 {
     public WidgetNotFoundException()
     {
+        this.Name = "WidgetNotFoundException";
     }
     public WidgetNotFoundException(string message)
         : base(message)
@@ -14,6 +15,6 @@ public class WidgetNotFoundException : BaseException
     }
     public string Display()
     {
-        return ExceptionUtility.Display(this, "WidgetNotFoundException");
+        return this.Display();
     }
 }

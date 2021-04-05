@@ -3,9 +3,9 @@
     public class WidgetAlreadyExistsException : BaseException
     {
         public WidgetAlreadyExistsException()
-             : base()
         {
-        }
+        this.Name = "WidgetAlreadyExistsException";
+    }
         public WidgetAlreadyExistsException(string message)
             : base(message)
         {
@@ -16,7 +16,7 @@
         }
         public string Display()
         {
-            return ExceptionUtility.Display(this, "WidgetAlreadyExistsException");
+            return this.Display();
         }
     }
 //}

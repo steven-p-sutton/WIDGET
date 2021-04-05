@@ -2,6 +2,7 @@
 {
     public WidgetNotImplentedException()
     {
+        this.Name = "WidgetNotImplentedException";
     }
     public WidgetNotImplentedException(string message)
         : base(message)
@@ -13,6 +14,6 @@
     }
     public string Display()
     {
-        return ExceptionUtility.Display(this, "WidgetNotImplentedException");
+        return this.Display();
     }
 }
