@@ -34,21 +34,21 @@ namespace Conductus.WIDGET.Test
             widget.Assert = IMock.RunType.EXCEPTION;
         }
         [Fact]
-        public void Test3_TWidget_Test()
+        public void Test3_HWidget_Try()
         {
-            var widget = new TWidget();
-            widget.Test = true;
+            var widget = new HWidget();
+            widget.Try = true;
         }
         [Fact]
-        public void Test4_TWidget_Ping()
+        public void Test4_HWidget_Ping()
         {
-            var testWidget = new TWidget();
+            var testWidget = new HWidget();
             Assert.Equal(3, testWidget.Ping());
         }
         [Fact]
-        public void Test4_TWidget_Display()
+        public void Test4_HWidget_Display()
         {
-            var testWidget = new TWidget();
+            var testWidget = new HWidget();
             Assert.Contains("TWidget", testWidget.Display());
         }
         [Fact]

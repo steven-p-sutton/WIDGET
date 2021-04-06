@@ -1,10 +1,10 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-public class TWidget
+public class HWidget
 {
     Widget Widget {get; set;}
-    public TWidget()
+    public HWidget()
     {
         this.Widget = new Widget
         {
@@ -15,11 +15,11 @@ public class TWidget
             Secret = string.Empty
         };
     }
-    public TWidget(Widget widget)
+    public HWidget(Widget widget)
     {
         this.Widget = widget;
     }
-    public bool Test
+    public bool Try
     {
         set
         {
