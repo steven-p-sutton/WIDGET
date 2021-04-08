@@ -5,7 +5,7 @@ using Conductus.MOCK.Model.Core;
 
 namespace Conductus.WIDGET.CODERUN
 {
-    public class WidgetCodeRun : ICodeRunModule
+    public class WidgetCodeRun : ACodeRunModule
     {
         public override string Title
         {
