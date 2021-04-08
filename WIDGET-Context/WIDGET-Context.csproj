@@ -9,7 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WIDGET-Exception-Model-Net\WIDGET-Exception-Model-Net.csproj" />
     <ProjectReference Include="..\WIDGET-Model-Net\WIDGET-Model-Net.csproj" />
   </ItemGroup>
 

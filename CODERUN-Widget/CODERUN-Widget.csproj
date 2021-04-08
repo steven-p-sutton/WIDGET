@@ -14,6 +14,9 @@
     <Reference Include="CODERUN-Model-Core">
       <HintPath>..\..\INFRASTRUCTURE\CODERUN-Model-Core\bin\Debug\netcoreapp3.1\CODERUN-Model-Core.dll</HintPath>
     </Reference>
+    <Reference Include="EXCEPTION-Model-Core">
+      <HintPath>..\..\INFRASTRUCTURE\EXCEPTION-Model-Core\bin\Debug\netcoreapp3.1\EXCEPTION-Model-Core.dll</HintPath>
+    </Reference>
     <Reference Include="EXTENSION-Model-Core">
       <HintPath>..\..\INFRASTRUCTURE\EXTENSION-Model-Core\bin\Debug\netcoreapp3.1\EXTENSION-Model-Core.dll</HintPath>
     </Reference>

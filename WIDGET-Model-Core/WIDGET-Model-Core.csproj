@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="EXCEPTION-Model-Net">
-      <HintPath>..\..\INFRASTRUCTURE\EXCEPTION-Model-Net\bin\Debug\netstandard2.0\EXCEPTION-Model-Net.dll</HintPath>
+    <Reference Include="EXCEPTION-Model-Core">
+      <HintPath>..\..\INFRASTRUCTURE\EXCEPTION-Model-Core\bin\Debug\netcoreapp3.1\EXCEPTION-Model-Core.dll</HintPath>
     </Reference>
     <Reference Include="EXTENSION-Model-Core">
       <HintPath>..\..\INFRASTRUCTURE\EXTENSION-Model-Core\bin\Debug\netcoreapp3.1\EXTENSION-Model-Core.dll</HintPath>

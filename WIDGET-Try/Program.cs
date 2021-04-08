@@ -1,7 +1,7 @@
 ﻿using System;
 //using Conductus.Widget.Object; // .NET WIDGET-Object.dll
 // WIDGET-Model doesn't require 'using' as code is imported in
-using Conductus.WIDGET.Exception;
+using Conductus.EXCEPTION.Model.Net;
 
 namespace Conductus.WIDGET.Try
 {
