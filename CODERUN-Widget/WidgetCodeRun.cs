@@ -7,12 +7,12 @@ namespace Conductus.WIDGET.CODERUN
 {
     public class WidgetCodeRun : ICodeRunModule
     {
-        public string Title
+        public override string Title
         {
             get { return "Widget MOQ Code Run"; }
         }
 
-        public void Run()
+        public override void Run()
         {
             try
             {

@@ -19,6 +19,10 @@ public class HWidget
     {
         this.Widget = widget;
     }
+
+    /// <summary>
+    /// An overall confidence test to try out the class 
+    /// </summary>
     public bool Try
     {
         set
@@ -30,12 +34,15 @@ public class HWidget
             }
         }
     }
+    /// <summary>
+    /// Each class method / property to hae a call to exercise it 
+    /// </summary>
     public int Ping()
     {
         return this.Widget.Ping(1, 2);
     }
     public string Display()
     {
-        return this.Widget.Display("TWidget");
+        return this.Widget.Display("HWidget");
     }
 }
