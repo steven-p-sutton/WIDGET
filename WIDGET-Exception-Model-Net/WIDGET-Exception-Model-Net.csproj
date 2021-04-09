@@ -1,11 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>WIDGET_Exception_Model_Net</RootNamespace>
   </PropertyGroup>
-
-  <Import Project="..\WIDGET-Exception-Model\WIDGET-Exception-Model.projitems" Label="Shared" />
 
   <ItemGroup>
     <Reference Include="EXCEPTION-Model-Net">

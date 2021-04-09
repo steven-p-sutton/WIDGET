@@ -14,6 +14,4 @@
     </Reference>
   </ItemGroup>
 
-  <Import Project="..\WIDGET-Exception-Model\WIDGET-Exception-Model.projitems" Label="Shared" />
-
 </Project>
