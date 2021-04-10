@@ -4,12 +4,12 @@ using Moq;
 
 public class MWidget : IMock
     {
-        public Mock<Widget> _mMock;
+        public Mock<IWidget> _mMock;
         public MWidget()
         {
-            _mMock = new Mock<Widget>();
+            _mMock = new Mock<IWidget>();
         }
-        public Mock<Widget> Mock
+        public Mock<IWidget> Mock
         {
             get => _mMock;
         }
