@@ -19,19 +19,19 @@ namespace Conductus.WIDGET.CODERUN
                 var widget = new MWidget
                 {
                     Run = IMock.RunType.SUCCESS,
-                    Arrange = IMock.RunType.SUCCESS,
-                    Test = IMock.RunType.SUCCESS,
-                    Assert = IMock.RunType.SUCCESS
+                    Arrange = true,
+                    Test = true,
+                    Assert = true
                 };
 
                 var widget2 = new MWidget
                 {
                     Run = IMock.RunType.EXCEPTION,
                     ExceptionExpected = new Exception("Widget Error"),
-                    Throws = IMock.RunType.EXCEPTION,
-                    Arrange = IMock.RunType.EXCEPTION,
-                    Test = IMock.RunType.EXCEPTION,
-                    Assert = IMock.RunType.EXCEPTION
+                    Throws = true,
+                    Arrange = true,
+                    Test = true,
+                    Assert = true
                 };
             }
             catch (Exception e)

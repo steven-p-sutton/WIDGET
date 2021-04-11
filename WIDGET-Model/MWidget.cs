@@ -70,12 +70,15 @@ public class MWidget : IMock
                 }
             }
         }
-        public override RunType Throws
+    public override bool Throws
+    {
+        set
         {
-            set
+            if (value)
             {
-                if (value == RunType.EXCEPTION)
+                if (this.Run == RunType.EXCEPTION)
                 {
+
                     _mMock.Setup(x => x.Display(It.IsAny<string>()))
                     .Throws(this.ExceptionExpected);
 
@@ -89,64 +92,68 @@ public class MWidget : IMock
                 }
             }
         }
-        public override int Verify
+    }
+    public override bool Verify
+    {
+        set
         {
-            set
+            if (value)
             {
-                if (value == 0)
+                if (this.Run == RunType.EXCEPTION)
                 {
                     _mMock.Verify(x => x.Display(It.IsAny<string>()), Times.Once()); // TBC
                     _mMock.Verify(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()), Times.Never());
                 }
-                else if (value == 1)
+                else if (this.Run == RunType.SUCCESS)
                 {
                     _mMock.Verify(x => x.Display(It.IsAny<string>()), Times.Once());
                     _mMock.Verify(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()), Times.Once());
                 }
                 else
                 {
-                    _mMock.Verify(x => x.Display(It.IsAny<string>()), Times.Exactly(value));
-                    _mMock.Verify(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()), Times.Exactly(value));
+                    _mMock.Verify(x => x.Display(It.IsAny<string>()), Times.AtLeastOnce());
+                    _mMock.Verify(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()), Times.AtLeastOnce());
                 }
             }
-        }
-        public override RunType Arrange
-        {
-            set
+            else
             {
-                if (value == RunType.SUCCESS)
-                {
-                    this.Verifyable = true;
-                    this.Returns = true;
-                }
-                else
-                    this.Throws = value;
-            }
-        }
-        public override RunType Test
-        {
-            set
-            {
-                if (value == RunType.SUCCESS)
-                {
-                    Console.WriteLine(this.Mock.Object.Display("Unit Test"));
-                    Console.WriteLine(this.Mock.Object.Ping(2, 3));
-                }
-                else
-                {
-                    Console.WriteLine(this.Mock.Object.Display("Unit Test"));
-                    Console.WriteLine(this.Mock.Object.Ping(2, 3));
-                }
-            }
-        }
-        public override RunType Assert
-        {
-            set
-            {
-                if (value == RunType.SUCCESS)
-                    this.Verify = 1;
-                else
-                    this.Verify = 0; // TBC
+                _mMock.Verify(x => x.Display(It.IsAny<string>()), Times.Never());
+                _mMock.Verify(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()), Times.Never());
             }
         }
     }
+    public override bool Arrange
+    {
+        set
+        {
+            if (this.Run == RunType.SUCCESS)
+            {
+                this.Verifyable = true;
+                this.Returns = true;
+            }
+            else
+                this.Throws = value;
+        }
+    }
+    public override bool Test
+    {
+        set
+        {
+            if (value)
+            {
+                Console.WriteLine(this.Mock.Object.Display("Unit Test"));
+                Console.WriteLine(this.Mock.Object.Ping(2, 3));
+            }
+        }
+    }
+    public override bool Assert
+    {
+        set
+        {
+            if (value)
+            {
+                this.Verify = true;
+            }
+        }
+    }
+}

@@ -13,9 +13,9 @@ namespace Conductus.WIDGET.Test
             var widget = new MWidget
             {
                 Run = IMock.RunType.SUCCESS,
-                Arrange = IMock.RunType.SUCCESS,
-                Test = IMock.RunType.SUCCESS,
-                Assert = IMock.RunType.SUCCESS
+                Arrange = true,
+                Test = true,
+                Assert = true
             };
         }
         [Fact]
@@ -25,13 +25,13 @@ namespace Conductus.WIDGET.Test
             {
                 Run = IMock.RunType.EXCEPTION,
                 ExceptionExpected = new Exception("Widget Error"),
-                Throws = IMock.RunType.EXCEPTION,
-                Arrange = IMock.RunType.EXCEPTION
+                Throws = true,
+                Arrange = true
             };
 
-            widget.ExceptionRaised = Assert.Throws<Exception>(() => widget.Test = IMock.RunType.EXCEPTION);
+            widget.ExceptionRaised = Assert.Throws<Exception>(() => widget.Test = true);
             Assert.Equal(widget.ExceptionExpected.Message, widget.ExceptionRaised.Message);
-            widget.Assert = IMock.RunType.EXCEPTION;
+            widget.Assert = true;
         }
         [Fact]
         public void Test3_HWidget_Try()
