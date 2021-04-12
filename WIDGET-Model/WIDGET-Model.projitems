@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)HWidget.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RunType.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)XWidget.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Widget.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WidgetDTO.cs" />

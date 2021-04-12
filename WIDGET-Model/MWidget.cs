@@ -1,103 +1,94 @@
 ﻿using System;
 using Moq;
-//using MOCK.Framework;
 
 public class MWidget : IMock
-    {
-    /// <summary>
-    /// RunType - A means to partition the stages of the object semantics. 
-    /// IMock.IRunType contains SUCCESS = 0 & EXCPTION = 1 properties so we can add some 
-    /// specific ones applicable to out Mock object
-    /// </summary>
-    public class RunType : IRunType
-    {
-        public static int FAIL_Ping { get { return -1; } }
-        public static int FAIL_Display { get { return -2; } }
-    }
+{
+
     public Mock<IWidget> _mMock;
-        public MWidget()
+
+    public MWidget()
+    {
+        _mMock = new Mock<IWidget>();
+    }
+    public Mock<IWidget> Mock
+    {
+        get => _mMock;
+    }
+    public override bool Returns
+    {
+        set
         {
-            _mMock = new Mock<IWidget>();
-        }
-        public Mock<IWidget> Mock
-        {
-            get => _mMock;
-        }
-        public override bool Returns
-        {
-            set
+            _mMock.Setup(x => x.Display(It.IsAny<string>()))
+            .Returns((string x) => string.Empty);
+
+            _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()))
+            .Returns((int x, int y) => 0);
+
+            if (value)
             {
-                _mMock.Setup(x => x.Display(It.IsAny<string>()))
-                .Returns((string x) => string.Empty);
-
                 _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()))
-                .Returns((int x, int y) => 0);
+                .Returns((int x, int y) => 42);
 
-                if (value)
+                _mMock.Setup(x => x.Display(It.IsAny<string>()))
+                .Returns((string x) => "Display called OK");
+            }
+        }
+    }
+    public override bool ReturnsAsync
+    {
+        set
+        {
+            _mMock.Setup(x => x.Display(It.IsAny<string>()));
+            _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
+
+            if (value)
+            {
+                if (this.Run == RunType.FAIL_Ping)
+                {
+                    _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
+                }
+                if (this.Run == RunType.FAIL_Display)
+                {
+                    _mMock.Setup(x => x.Display(It.IsAny<string>()));
+                }
+                if (this.Run == RunType.SUCCESS)
+                {
+                    _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
+                    _mMock.Setup(x => x.Display(It.IsAny<string>()));
+                }
+            }
+        }
+    }
+    public override bool Verifyable
+    {
+        set
+        {
+            _mMock.Setup(x => x.Display(It.IsAny<string>()));
+            _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
+
+            if (value)
+            {
+                if (this.Run == RunType.FAIL_Ping)
                 {
                     _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()))
-                    .Returns((int x, int y) => 42);
+                    .Verifiable();
+                }
+                if (this.Run == RunType.FAIL_Display)
+                {
+                    _mMock.Setup(x => x.Display(It.IsAny<string>()))
+                    .Verifiable();
+                }
+                if (this.Run == RunType.SUCCESS)
+                {
+                    _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()))
+                    .Verifiable();
 
                     _mMock.Setup(x => x.Display(It.IsAny<string>()))
-                    .Returns((string x) => "Display called OK");
+                    .Verifiable();
                 }
             }
         }
-        public override bool ReturnsAsync
-        {
-            set
-            {
-                _mMock.Setup(x => x.Display(It.IsAny<string>()));
-                _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
-
-                if (value)
-                {
-                    if (this.Run == RunType.FAIL_Ping)
-                    {
-                        _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
-                    }
-                    if (this.Run == RunType.FAIL_Display)
-                    {
-                        _mMock.Setup(x => x.Display(It.IsAny<string>()));
-                    }
-                    if (this.Run == RunType.SUCCESS)
-                    {
-                        _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
-                        _mMock.Setup(x => x.Display(It.IsAny<string>()));
-                    }
-                }
-            }
-        }
-        public override bool Verifyable
-        {
-            set
-            {
-                _mMock.Setup(x => x.Display(It.IsAny<string>()));
-                _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
-
-                if (value)
-                {
-                    if (this.Run == RunType.FAIL_Ping)
-                    {
-                        _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()))
-                        .Verifiable();
-                    }
-                    if (this.Run == RunType.FAIL_Display)
-                    {
-                        _mMock.Setup(x => x.Display(It.IsAny<string>()))
-                        .Verifiable();
-                    }
-                    if (this.Run == RunType.SUCCESS)
-                    {
-                        _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()))
-                        .Verifiable();
-
-                        _mMock.Setup(x => x.Display(It.IsAny<string>()))
-                        .Verifiable();
-                    }
-                }
-            }
-        }
+    }
     public override bool Throws
     {
         set
