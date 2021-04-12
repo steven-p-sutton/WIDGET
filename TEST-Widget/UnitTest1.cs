@@ -12,7 +12,7 @@ namespace Conductus.WIDGET.Test
         {
             var widget = new MWidget
             {
-                Run = IMock.RunType.SUCCESS,
+                Run = IRunType.SUCCESS,
                 Arrange = true,
                 Test = true,
                 Assert = true
@@ -23,7 +23,7 @@ namespace Conductus.WIDGET.Test
         {
             var widget = new MWidget
             {
-                Run = IMock.RunType.EXCEPTION,
+                Run = IRunType.EXCEPTION,
                 ExceptionExpected = new Exception("Widget Error"),
                 Throws = true,
                 Arrange = true

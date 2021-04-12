@@ -23,8 +23,8 @@
     <Reference Include="MOCK-Model-Core">
       <HintPath>..\..\INFRASTRUCTURE\MOCK-Model-Core\bin\Debug\netcoreapp3.1\MOCK-Model-Core.dll</HintPath>
     </Reference>
-    <Reference Include="UTILITY-Model-Core">
-      <HintPath>..\..\INFRASTRUCTURE\UTILITY-Model-Core\bin\Debug\netcoreapp3.1\UTILITY-Model-Core.dll</HintPath>
+    <Reference Include="WIDGET-Model-Core">
+      <HintPath>..\WIDGET-Model-Core\bin\Debug\netcoreapp3.1\WIDGET-Model-Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 

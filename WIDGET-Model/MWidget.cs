@@ -4,7 +4,17 @@ using Moq;
 
 public class MWidget : IMock
     {
-        public Mock<IWidget> _mMock;
+    /// <summary>
+    /// RunType - A means to partition the stages of the object semantics. 
+    /// IMock.IRunType contains SUCCESS = 0 & EXCPTION = 1 properties so we can add some 
+    /// specific ones applicable to out Mock object
+    /// </summary>
+    public class RunType : IRunType
+    {
+        public static int FAIL_Ping { get { return -1; } }
+        public static int FAIL_Display { get { return -2; } }
+    }
+    public Mock<IWidget> _mMock;
         public MWidget()
         {
             _mMock = new Mock<IWidget>();
@@ -17,21 +27,19 @@ public class MWidget : IMock
         {
             set
             {
+                _mMock.Setup(x => x.Display(It.IsAny<string>()))
+                .Returns((string x) => string.Empty);
+
+                _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()))
+                .Returns((int x, int y) => 0);
+
                 if (value)
                 {
-                    _mMock.Setup(x => x.Display(It.IsAny<string>()))
-                     .Returns((string x) => "Display called OK");
-
                     _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()))
-                     .Returns((int x, int y) => 42);
-                }
-                else
-                {
-                    _mMock.Setup(x => x.Display(It.IsAny<string>()))
-                     .Returns((string x) => string.Empty);
+                    .Returns((int x, int y) => 42);
 
-                    _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()))
-                     .Returns((int x, int y) => 0);
+                    _mMock.Setup(x => x.Display(It.IsAny<string>()))
+                    .Returns((string x) => "Display called OK");
                 }
             }
         }
@@ -39,15 +47,24 @@ public class MWidget : IMock
         {
             set
             {
+                _mMock.Setup(x => x.Display(It.IsAny<string>()));
+                _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
+
                 if (value)
                 {
-                    _mMock.Setup(x => x.Display(It.IsAny<string>()));
-                    _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
-                }
-                else
-                {
-                    _mMock.Setup(x => x.Display(It.IsAny<string>()));
-                    _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
+                    if (this.Run == RunType.FAIL_Ping)
+                    {
+                        _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
+                    }
+                    if (this.Run == RunType.FAIL_Display)
+                    {
+                        _mMock.Setup(x => x.Display(It.IsAny<string>()));
+                    }
+                    if (this.Run == RunType.SUCCESS)
+                    {
+                        _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
+                        _mMock.Setup(x => x.Display(It.IsAny<string>()));
+                    }
                 }
             }
         }
@@ -55,18 +72,29 @@ public class MWidget : IMock
         {
             set
             {
+                _mMock.Setup(x => x.Display(It.IsAny<string>()));
+                _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
+
                 if (value)
                 {
-                    _mMock.Setup(x => x.Display(It.IsAny<string>()))
-                    .Verifiable();
+                    if (this.Run == RunType.FAIL_Ping)
+                    {
+                        _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()))
+                        .Verifiable();
+                    }
+                    if (this.Run == RunType.FAIL_Display)
+                    {
+                        _mMock.Setup(x => x.Display(It.IsAny<string>()))
+                        .Verifiable();
+                    }
+                    if (this.Run == RunType.SUCCESS)
+                    {
+                        _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()))
+                        .Verifiable();
 
-                    _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()))
-                    .Verifiable();
-                }
-                else
-                {
-                    _mMock.Setup(x => x.Display(It.IsAny<string>()));
-                    _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
+                        _mMock.Setup(x => x.Display(It.IsAny<string>()))
+                        .Verifiable();
+                    }
                 }
             }
         }
@@ -74,21 +102,28 @@ public class MWidget : IMock
     {
         set
         {
+            _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
+            _mMock.Setup(x => x.Display(It.IsAny<string>()));
+
             if (value)
             {
-                if (this.Run == RunType.EXCEPTION)
+                if (this.Run == RunType.FAIL_Ping)
                 {
-
-                    _mMock.Setup(x => x.Display(It.IsAny<string>()))
-                    .Throws(this.ExceptionExpected);
-
                     _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()))
                     .Throws(this.ExceptionExpected);
                 }
-                else
+                if (this.Run == RunType.FAIL_Display)
                 {
-                    _mMock.Setup(x => x.Display(It.IsAny<string>()));
-                    _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()));
+                    _mMock.Setup(x => x.Display(It.IsAny<string>()))
+                    .Throws(this.ExceptionExpected);
+                }
+                if (this.Run == RunType.EXCEPTION)
+                {
+                    _mMock.Setup(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()))
+                    .Throws(this.ExceptionExpected);
+
+                    _mMock.Setup(x => x.Display(It.IsAny<string>()))
+                    .Throws(this.ExceptionExpected);
                 }
             }
         }
@@ -97,28 +132,19 @@ public class MWidget : IMock
     {
         set
         {
+            _mMock.Verify(x => x.Display(It.IsAny<string>()), Times.Never());
+            _mMock.Verify(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()), Times.Never());
+
             if (value)
             {
-                if (this.Run == RunType.EXCEPTION)
+                if (this.Run == RunType.FAIL_Ping)
                 {
-                    _mMock.Verify(x => x.Display(It.IsAny<string>()), Times.Once()); // TBC
-                    _mMock.Verify(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()), Times.Never());
-                }
-                else if (this.Run == RunType.SUCCESS)
-                {
-                    _mMock.Verify(x => x.Display(It.IsAny<string>()), Times.Once());
                     _mMock.Verify(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()), Times.Once());
                 }
-                else
+                if (this.Run == RunType.FAIL_Display)
                 {
-                    _mMock.Verify(x => x.Display(It.IsAny<string>()), Times.AtLeastOnce());
-                    _mMock.Verify(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()), Times.AtLeastOnce());
+                    _mMock.Verify(x => x.Display(It.IsAny<string>()), Times.Once());
                 }
-            }
-            else
-            {
-                _mMock.Verify(x => x.Display(It.IsAny<string>()), Times.Never());
-                _mMock.Verify(x => x.Ping(It.IsAny<int>(), It.IsAny<int>()), Times.Never());
             }
         }
     }
@@ -126,13 +152,12 @@ public class MWidget : IMock
     {
         set
         {
-            if (this.Run == RunType.SUCCESS)
+            if (value)
             {
-                this.Verifyable = true;
-                this.Returns = true;
-            }
-            else
+                this.Verifyable = value;
+                this.Returns = value;
                 this.Throws = value;
+            }
         }
     }
     public override bool Test
@@ -141,8 +166,19 @@ public class MWidget : IMock
         {
             if (value)
             {
-                Console.WriteLine(this.Mock.Object.Display("Unit Test"));
-                Console.WriteLine(this.Mock.Object.Ping(2, 3));
+                if (this.Run == RunType.FAIL_Ping)
+                {
+                    Console.WriteLine(this.Mock.Object.Ping(2, 3));
+                }
+                if (this.Run == RunType.FAIL_Display)
+                {
+                    Console.WriteLine(this.Mock.Object.Display("Unit Test"));
+                }
+                if (this.Run == RunType.SUCCESS)
+                {
+                    Console.WriteLine(this.Mock.Object.Ping(2, 3));
+                    Console.WriteLine(this.Mock.Object.Display("Unit Test"));
+                }
             }
         }
     }

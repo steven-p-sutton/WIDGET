@@ -1,6 +1,7 @@
 ﻿using System;
 using Conductus.CODERUN.Model.Core;
 using Conductus.MOCK.Model.Core;
+using static MWidget;
 //using Conductus.WIDGET.Model.Core;
 
 namespace Conductus.WIDGET.CODERUN
@@ -18,7 +19,7 @@ namespace Conductus.WIDGET.CODERUN
             {
                 var widget = new MWidget
                 {
-                    Run = IMock.RunType.SUCCESS,
+                    Run = RunType.SUCCESS,
                     Arrange = true,
                     Test = true,
                     Assert = true
@@ -26,7 +27,7 @@ namespace Conductus.WIDGET.CODERUN
 
                 var widget2 = new MWidget
                 {
-                    Run = IMock.RunType.EXCEPTION,
+                    Run = RunType.FAIL_Ping,
                     ExceptionExpected = new Exception("Widget Error"),
                     Throws = true,
                     Arrange = true,
