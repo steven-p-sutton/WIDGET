@@ -13,7 +13,7 @@ public class WidgetAlreadyExistsException : BaseException
         : base(message, inner)
     {
     }
-    public string Display()
+    public override string Display()
     {
         return this.Display();
     }
@@ -32,7 +32,7 @@ public class WidgetNotFoundException : BaseException
         : base(message, inner)
     {
     }
-    public string Display()
+    public override string Display()
     {
         return this.Display();
     }
@@ -51,7 +51,7 @@ public class WidgetNotImplentedException : BaseException
         : base(message, inner)
     {
     }
-    public string Display()
+    public override string Display()
     {
         return this.Display();
     }

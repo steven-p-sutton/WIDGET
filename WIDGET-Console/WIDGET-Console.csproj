@@ -16,8 +16,8 @@
     <Reference Include="DATABASE-Model-Core">
       <HintPath>..\..\INFRASTRUCTURE\DATABASE-Model-Core\bin\Debug\netcoreapp3.1\DATABASE-Model-Core.dll</HintPath>
     </Reference>
-    <Reference Include="UTILITY-Model-Core">
-      <HintPath>..\..\INFRASTRUCTURE\UTILITY-Model-Core\bin\Debug\netcoreapp3.1\UTILITY-Model-Core.dll</HintPath>
+    <Reference Include="EXTENSION-Model-Core">
+      <HintPath>..\..\INFRASTRUCTURE\EXTENSION-Model-Core\bin\Debug\netcoreapp3.1\EXTENSION-Model-Core.dll</HintPath>
     </Reference>
     <Reference Include="WIDGET-Model-Core">
       <HintPath>..\..\WIDGET\WIDGET-Model-Core\bin\Debug\netcoreapp3.1\WIDGET-Model-Core.dll</HintPath>

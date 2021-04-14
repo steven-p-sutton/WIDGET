@@ -20,7 +20,7 @@
       <HintPath>..\..\INFRASTRUCTURE\EXTENSION-Model-Net\bin\Debug\netstandard2.0\EXTENSION-Model-Net.dll</HintPath>
     </Reference>
     <Reference Include="MOCK-Model-Net">
-      <HintPath>..\..\INFRASTRUCTURE\MOCK-Model-Net\bin\Debug\netcoreapp3.1\MOCK-Model-Net.dll</HintPath>
+      <HintPath>..\..\INFRASTRUCTURE\MOCK-Model-Net\bin\Debug\netstandard2.0\MOCK-Model-Net.dll</HintPath>
     </Reference>
   </ItemGroup>
 
